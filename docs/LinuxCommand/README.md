@@ -2,44 +2,44 @@
 
 > 目前已收录20条Linux命令，仍在持续增加中
 
-## 1. ls
+[1. ls](LinuxCommand/ls.md)
 
-## 2. cd
+[2. cd](LinuxCommand/cd.md)
 
-## 3. pwd
+[3. pwd](LinuxCommand/pwd.md)
 
-## 4. mkdir
+[4. mkdir](LinuxCommand/mkdir.md)
 
-## 5. rm
+[5. rm](LinuxCommand/rm.md)
 
-## 6. rmdir
+[6. rmdir](LinuxCommand/rmdir.md)
 
-## 7. mv
+[7. mv](LinuxCommand/mv.md)
 
-## 8. cp
+[8. cp](LinuxCommand/cp.md)
 
-## 9. touch
+[9. touch](LinuxCommand/touch.md)
 
-## 10. cat
+[10. cat](LinuxCommand/cat.md)
 
-## 11. nl
+[11. nl](LinuxCommand/nl.md)
 
-## 12. more
+[12. more](LinuxCommand/more.md)
 
-## 13. less
+[13. less](LinuxCommand/less.md)
 
-## 14. head
+[14. head](LinuxCommand/head.md)
 
-## 15. tail
+[15. tail](LinuxCommand/tail.md)
 
-## 16. which
+[16. which](LinuxCommand/which.md)
 
-## 17. whereis
+[17. whereis](LinuxCommand/whereis.md)
 
-## 18. locate
+[18. locate](LinuxCommand/locate.md)
 
-## 19. find
+[19. find](LinuxCommand/find.md)
 
-## 20. chmod
+[20. chmod](LinuxCommand/chmod.md)
 
-## 21. tar
+[21.  tar](LinuxCommand/tar.md)
