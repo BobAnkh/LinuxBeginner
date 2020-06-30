@@ -23,9 +23,9 @@
   - [19. find](LinuxCommand/find.md)
   - [20. chmod](LinuxCommand/chmod.md)
   - [21. tar](LinuxCommand/tar.md)
+  - [22. paste](LinuxCommand/paste.md)
 
 - [**Linux工具**](LinuxTool/ 'Linux Tool')
   - [1. Tmux](LinuxTool/tmux.md)
   - [2. Htop](LinuxTool/htop.md)
   - [3. Tree](LinuxTool/tree.md)
-  - 
