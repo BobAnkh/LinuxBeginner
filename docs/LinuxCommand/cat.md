@@ -35,10 +35,10 @@
     tac命令用于将文件已行为单位的反序输出，即第一行最后显示，最后一行先显示，用法如下例：
 
     ```bash
-    $ cat /路径/file_1.txt
+    $ cat file_1.txt
     line_1
     line_2
-    $ tac /路径/file_1.txt
+    $ tac file_1.txt
     line_2
     line_1
     ```
@@ -54,5 +54,5 @@
    清空file_1.txt中的内容：
 
    ```bash
-   cat /dev/null > /路径/file_1.txt
+   cat /dev/null > file_1.txt
    ```
