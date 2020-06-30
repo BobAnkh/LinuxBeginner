@@ -10,7 +10,7 @@ jobs:
       uses: subhamX/github-project-bot@v1.0.0
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        COLUMN_NAME: In Progress
+        COLUMN_NAME: In progress
         PROJECT_URL: https://github.com/BobAnkh/LinuxBeginner/projects/1
         # For User Owned Project -> PROJECT_URL: https://github.com/users/UNAME/projects/1
         REPO_URL: https://github.com/BobAnkh/LinuxBeginner
@@ -19,7 +19,7 @@ jobs:
       uses: subhamX/github-project-bot@v1.0.0
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        COLUMN_NAME: In Progress
+        COLUMN_NAME: In progress
         PROJECT_URL: https://github.com/BobAnkh/LinuxBeginner/projects/2
         # For User Owned Project -> PROJECT_URL: https://github.com/users/subhamX/projects/1
         REPO_URL: https://github.com/BobAnkh/LinuxBeginner
