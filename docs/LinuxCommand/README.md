@@ -1,6 +1,6 @@
 # Linux Command
 
-> 目前已收录20条Linux命令，仍在持续增加中
+> 目前已收录22条Linux命令，仍在持续增加中
 
 [1. ls](LinuxCommand/ls.md)
 
