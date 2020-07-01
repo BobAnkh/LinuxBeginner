@@ -43,3 +43,5 @@
 [20. chmod](LinuxCommand/chmod.md)
 
 [21.  tar](LinuxCommand/tar.md)
+
+[22.  paste](LinuxCommand/paste.md)
