@@ -8,15 +8,7 @@ jobs:
     steps:
     - name: add-new-prs-to-repository-based-project-column-LinuxCommand
       uses: docker://takanabe/github-actions-automate-projects:v0.0.1
-      if: contains(github.head_ref, 'LinuxCommand') == 'true'
       env:
         GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         GITHUB_PROJECT_URL: https://github.com/BobAnkh/LinuxBeginner/projects/1
-        GITHUB_PROJECT_COLUMN_NAME: In progress
-    - name: add-new-prs-to-repository-based-project-column-LinuxTool
-      uses: docker://takanabe/github-actions-automate-projects:v0.0.1
-      if: contains(github.head_ref, 'LinuxTool') == 'true'
-      env:
-        GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        GITHUB_PROJECT_URL: https://github.com/BobAnkh/LinuxBeginner/projects/2
         GITHUB_PROJECT_COLUMN_NAME: In progress
