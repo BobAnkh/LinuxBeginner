@@ -6,21 +6,21 @@ jobs:
     steps:
     - name: add-new-issues-to-repository-based-project-column
       uses: docker://takanabe/github-actions-automate-projects:v0.0.1
-      if: github.event_name == 'issues' && github.event.action == 'opened'
+      if: github.event_name == 'issues' && (github.event.action == 'opened' || github.event.action == 'reopened')
       env:
         GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         GITHUB_PROJECT_URL: https://github.com/BobAnkh/LinuxBeginner/projects/3
         GITHUB_PROJECT_COLUMN_NAME: To do
     - name: add-new-prs-to-repository-based-project-column-LinuxCommand
       uses: docker://takanabe/github-actions-automate-projects:v0.0.1
-      if: github.event_name == 'pull_request' && github.event.action == 'opened' && contains(${{github.head_ref}}, 'LinuxCommand')
+      if: github.event_name == 'pull_request' && (github.event.action == 'opened' || github.event.action == 'reopened') && contains(github.head_ref, 'LinuxCommand') == 'true'
       env:
         GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         GITHUB_PROJECT_URL: https://github.com/BobAnkh/LinuxBeginner/projects/1
         GITHUB_PROJECT_COLUMN_NAME: In progress
     - name: add-new-prs-to-repository-based-project-column-LinuxTool
       uses: docker://takanabe/github-actions-automate-projects:v0.0.1
-      if: github.event_name == 'pull_request' && github.event.action == 'opened' && contains(${{github.head_ref}}, 'LinuxTool')
+      if: github.event_name == 'pull_request' && (github.event.action == 'opened' || github.event.action == 'reopened') && contains(github.head_ref, 'LinuxTool') == 'true'
       env:
         GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         GITHUB_PROJECT_URL: https://github.com/BobAnkh/LinuxBeginner/projects/2
