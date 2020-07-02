@@ -14,15 +14,13 @@ ls [选项] [目录名]
 
 -A 同上但除去.和..开头的文件
 
--c
+-c 根据配合参数不同，有不同效果：
 
-```text
-配合 -lt：根据 ctime 排序及显示 ctime (文件状态最后更改的时间)
-
-配合 -l：显示 ctime 但根据名称排序
-
-否则：根据 ctime 排序
-```
+> 配合 -lt：根据 ctime 排序及显示 ctime (文件状态最后更改的时间)
+>
+> 配合 -l：显示 ctime 但根据名称排序
+>
+> 否则：根据 ctime 排序
 
 -C 每栏由上至下列出项目
 
@@ -70,29 +68,25 @@ ls [选项] [目录名]
 
 –sort=WORD 以下是可选用的 WORD 和它们代表的相应选项：
 
-```text
-extension -X status -c
-
-none -U time -t
-
-size -S atime -u
-
-time -t access -u
-
-version -v use -u
-```
+> extension -X status -c
+>
+> none -U time -t
+>
+> size -S atime -u
+>
+> time -t access -u
+>
+> version -v use -u
 
 -t 以文件修改时间排序
 
 -u
 
-```text
-配合 -lt:显示访问时间而且依访问时间排序
-
-配合 -l:显示访问时间但根据名称排序
-
-否则：根据访问时间排序
-```
+> 配合 -lt:显示访问时间而且依访问时间排序
+>
+> 配合 -l:显示访问时间但根据名称排序
+>
+> 否则：根据访问时间排序
 
 -U 不进行排序;依文件系统原有的次序列出项目
 
