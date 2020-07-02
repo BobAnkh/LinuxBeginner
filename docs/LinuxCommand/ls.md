@@ -10,9 +10,9 @@ ls [选项] [目录名]
 
 ## 3. 常用参数
 
--a, -all 列出包括.开头的隐含文件在内的所有文件
+-a, --all 列出包括.开头的隐含文件在内的所有文件
 
--A 同上但除去.和..开头的文件
+-A, --almost-all 同上但除去.和..开头的文件
 
 -c 根据配合参数不同，有不同效果：
 
@@ -24,29 +24,29 @@ ls [选项] [目录名]
 
 -C 每栏由上至下列出项目
 
-–color[=WHEN] 控制是否使用色彩分辨文件。WHEN 可以是'never'、'always'或'auto'其中之一
+--color[=WHEN] 控制是否使用色彩分辨文件。WHEN 可以是'never'、'always'或'auto'其中之一
 
--d, –directory 将目录象文件一样显示，而不是显示其下的文件。
+-d, --directory 将目录象文件一样显示，而不是显示其下的文件。
 
--D, –dired 产生适合 Emacs 的 dired 模式使用的结果
+-D, --dired 产生适合 Emacs 的 dired 模式使用的结果
 
 -f 对输出的文件不进行排序，-aU 选项生效，-lst 选项失效
 
 -g 类似 -l,但不列出所有者
 
--G, –no-group 不列出任何有关组的信息
+-G, --no-group 不列出任何有关组的信息
 
--h, –human-readable 以容易理解的格式列出文件大小 (例如 1K 234M 2G)
+-h, --human-readable 以容易理解的格式列出文件大小 (例如 1K 234M 2G)
 
-–si 类似 -h,但文件大小取 1000 的次方而不是 1024
+--si 类似 -h,但文件大小取 1000 的次方而不是 1024
 
--H, –dereference-command-line 使用命令列中的符号链接指示的真正目的地
+-H, --dereference-command-line 使用命令列中的符号链接指示的真正目的地
 
-–indicator-style=方式 指定在每个项目名称后加上指示符号<方式>：none (默认)，classify (-F)，file-type (-p)
+--indicator-style=方式 指定在每个项目名称后加上指示符号<方式>：none (默认)，classify (-F)，file-type (-p)
 
--i, –inode 印出每个文件的 inode 号
+-i, --inode 印出每个文件的 inode 号
 
--I, –ignore=样式 不印出任何符合 shell 万用字符<样式>的项目
+-I, --ignore=PATTERN 不印出任何符合 shell 万用字符<样式>的项目
 
 -k 即 –block-size=1K,以 k 字节的形式表示文件的大小。
 
@@ -66,7 +66,7 @@ ls [选项] [目录名]
 
 -S 根据文件大小排序
 
-–sort=WORD 以下是可选用的 WORD 和它们代表的相应选项：
+--sort=WORD 以下是可选用的 WORD 和它们代表的相应选项：
 
 > extension -X status -c
 >
@@ -92,7 +92,7 @@ ls [选项] [目录名]
 
 -v 根据版本进行排序
 
--w, –width=COLS 自行指定屏幕宽度而不使用目前的数值
+-w, --width=COLS 自行指定屏幕宽度而不使用目前的数值
 
 -x 逐行列出项目而不是逐栏列出
 
@@ -100,9 +100,9 @@ ls [选项] [目录名]
 
 -1 每行只列出一个文件
 
-–help 显示此帮助信息并离开
+--help 显示此帮助信息并离开
 
-–version 显示版本信息并离开
+--version 显示版本信息并离开
 
 ## 4. 注意事项
 
