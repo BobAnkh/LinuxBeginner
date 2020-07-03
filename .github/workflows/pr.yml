@@ -1,0 +1,14 @@
+name: Assign PullRequest to Project
+on:
+  pull_request:
+    types: [opened]
+jobs:
+  assignToProject:
+    name: Assign PullRequest to Project
+    runs-on: ubuntu-latest
+    steps:
+      - name: Assign PullRequest to Project
+        uses: technote-space/create-project-card-action@v1
+        with:
+          PROJECT: Linux command
+          COLUMN: In progress
