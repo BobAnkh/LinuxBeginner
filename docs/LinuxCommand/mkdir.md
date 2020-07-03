@@ -6,6 +6,8 @@ mkdir [选项] 目录
 
 ## 2. 基本功能
 
+新建目录
+
 ## 3. 常用参数
 
 -m, --mode=模式，设定权限<模式> (类似 chmod)，而不是 rwxrwxrwx
@@ -23,6 +25,15 @@ e.g.: `mkdir -m 777 test3`
 --version  输出版本信息并退出
 
 ## 4. 注意事项
+
+若不使用参数-p创建多级目录，将会报错：
+
+```console
+$ mkdir 1/2/3/4
+mkdir: cannot create directory ‘1/2/3/4’: No such file or directory
+```
+
+## 5. 常用形式
 
 一行命令创建项目的结构：
 
@@ -59,5 +70,3 @@ scf/
 
 12 directories, 0 files
 ```
-
-## 5. 常用形式
