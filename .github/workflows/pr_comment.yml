@@ -1,0 +1,17 @@
+name: Auto-comment to a PR
+on:
+  pull_request:
+    types: [opened]
+jobs:
+  assignToProject:
+    runs-on: ubuntu-latest
+    name: A auto-comment to a PR
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Comment PR
+        uses: thollander/actions-comment-pull-request@master
+        with:
+          message: 'Thanks for opening this pull request! Please check out the contributing guidelines in README.md.'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

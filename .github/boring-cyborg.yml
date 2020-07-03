@@ -27,7 +27,7 @@ labelPRBasedOnFilePath:
 ##### Greetings ########################################################################################################
 # Comment to be posted to welcome users when they open their first PR
 firstPRWelcomeComment: >
-  Thanks for opening this pull request! Please check out the contributing guidelines in README.md.
+  Thanks for your first pull request!
 
 # Comment to be posted to congratulate user on their first merged PR
 firstPRMergeComment: >
