@@ -28,7 +28,7 @@ e.g.: `mkdir -m 777 test3`
 
 若不使用参数-p创建多级目录，将会报错：
 
-```
+```console
 $ mkdir 1/2/3/4
 mkdir: cannot create directory ‘1/2/3/4’: No such file or directory
 ```
