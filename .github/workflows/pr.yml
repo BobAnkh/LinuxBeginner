@@ -1,15 +1,21 @@
 name: Assign PullRequest to Project
 on:
   pull_request:
-    types: [opened]
+    types: [opened, reopened]
 jobs:
   assignToProject:
     name: Assign PullRequest to Project
     runs-on: ubuntu-latest
-    if: "startsWith(github.head_ref, 'LinuxCommand/')"
     steps:
-      - name: Assign PullRequest to Project
+      - name: Assign PullRequest to Project Linux command
         uses: technote-space/create-project-card-action@v1
         with:
           PROJECT: Linux command
           COLUMN: In progress
+        if: "startsWith(github.head_ref, 'LinuxCommand/')"
+      - name: Assign PullRequest to Project Linux tool
+        uses: technote-space/create-project-card-action@v1
+        with:
+          PROJECT: Linux tool
+          COLUMN: In progress
+        if: "startsWith(github.head_ref, 'LinuxTool/')"
