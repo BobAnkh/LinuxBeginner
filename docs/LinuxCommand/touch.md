@@ -6,6 +6,8 @@ touch [选项] 文件
 
 ## 2. 基本功能
 
+可更改文档或目录的日期时间，包括存取时间和更改时间，也常用于创建新文件
+
 ## 3. 常用参数
 
 -a   或--time=atime或--time=access或--time=use 　只更改存取时间。
@@ -42,4 +44,41 @@ $ ls
 $ touch file_1.txt
 $ ls
 file_1.txt
+```
+
+更新file1.txt的时间戳与file2.txt相同
+
+```console
+$ ls -al
+total 12
+drwxr-xr-x  2 root root 4096 Jul  1 09:48 ./
+drwx------ 13 root root 4096 Jul  3 23:09 ../
+-rw-r--r--  1 root root    0 Jul  1 09:48 file1.txt
+-rw-r--r--  1 root root    6 Jul  3 23:11 file2.txt
+$ touch -r file2.txt file1.txt
+$ ls -al
+total 12
+drwxr-xr-x  2 root root 4096 Jul  1 09:48 ./
+drwx------ 13 root root 4096 Jul  3 23:09 ../
+-rw-r--r--  1 root root    0 Jul  3 23:11 file1.txt
+-rw-r--r--  1 root root    6 Jul  3 23:11 file2.txt
+```
+
+设定file1.txt的时间戳，以`-t`参数指定的时间值，应当符合这样的格式：`[[CC]YY]MMDDhhmm[.SS]`
+
+其中CC为年数的前两位，YY为后两位，若不给出CC值，则自动将CCYY限定为1969-2068之间，MM为月数，DD为天数，hh为小时数，mm为分钟数，SS为秒数（此处秒数设定为0-61，以处理闰秒）且请勿设置早于1970.1.1的日期
+
+```console
+$ ls -al
+total 12
+drwxr-xr-x  2 root root 4096 Jul  1 09:48 ./
+drwx------ 13 root root 4096 Jul  3 23:09 ../
+-rw-r--r--  1 root root    0 Jul  3 23:11 file1.txt
+-rw-r--r--  1 root root    6 Jul  3 23:11 file2.txt
+$ touch -t 201801011122.33 file1.txt
+total 12
+drwxr-xr-x  2 root root 4096 Jul  1 09:48 ./
+drwx------ 13 root root 4096 Jul  3 23:09 ../
+-rw-r--r--  1 root root    0 Jan  1  2018 file1.txt
+-rw-r--r--  1 root root    6 Jul  3 23:11 file2.txt
 ```
