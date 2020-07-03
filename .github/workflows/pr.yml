@@ -6,6 +6,7 @@ jobs:
   assignToProject:
     name: Assign PullRequest to Project
     runs-on: ubuntu-latest
+    if: "startsWith(github.head_ref, 'LinuxCommand/')"
     steps:
       - name: Assign PullRequest to Project
         uses: technote-space/create-project-card-action@v1
