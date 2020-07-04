@@ -1,0 +1,53 @@
+pull_request_rules:
+  - name: Automatic welcome on new pr
+    conditions:
+      - author!=BobAnkh
+      - "-closed"
+    actions:
+      comment:
+        message: |
+          Thanks for opening this pull request! 
+          Please check out the contributing guidelines in README.md.
+  - name: Assign author
+    conditions:
+      - "-closed"
+      - "#assignee=0"
+    actions:
+      assign: 
+        users:
+          - "{{author}}"
+  - name: Assign Reviewer
+    conditions:
+      - author!=BobAnkh
+      - "-draft"
+      - "-closed"
+    actions:
+      request_reviews:
+        users:
+          - BobAnkh
+  - name: Automatic merge on approval
+    conditions:
+      - author!=BobAnkh
+      - "#approved-reviews-by>=1"
+      - status-success=Title Validator
+      - "-closed"
+      - "-conflict"
+      - "-merged"
+    actions:
+      comment:
+        message: |
+          Thank you @{{author}} for your contributions!
+      merge:
+        method: merge
+        strict: smart+fasttrack
+  - name: Automatic merge
+    conditions:
+      - author=BobAnkh
+      - status-success=Title Validator
+      - "-closed"
+      - "-conflict"
+      - "-merged"
+    actions:
+      merge:
+        method: merge
+        strict: smart+fasttrack
