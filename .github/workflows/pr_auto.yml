@@ -12,7 +12,7 @@ jobs:
           message: |
             Thanks for opening this pull request! 
             Please check out the contributing guidelines in README.md.
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{ secrets.ACCESS_TOKEN }}
           repo-token-user-login: 'github-actions[bot]' # The user.login for temporary GitHub tokens
           allow-repeats: false # This is the default
           
@@ -21,4 +21,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Assign author to PR
-        uses: technote-space/assign-author@v1
+        uses: samspills/assign-pr-to-author@v1.0
+        with: 
+          repo-token: ${{ secrets.ACCESS_TOKEN }}
