@@ -11,7 +11,7 @@ jobs:
         with:
           message: |
             Thanks for opening this pull request! 
-            Please check out the contributing guidelines in README.md.'
+            Please check out the contributing guidelines in README.md.
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           repo-token-user-login: 'github-actions[bot]' # The user.login for temporary GitHub tokens
           allow-repeats: false # This is the default
