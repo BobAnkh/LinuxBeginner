@@ -8,14 +8,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Assign PullRequest to Project Linux command
-        uses: technote-space/create-project-card-action@v1
+        uses: alex-page/github-project-automation-plus@v0.2.4
         with:
-          PROJECT: Linux command
-          COLUMN: In progress
-        if: "startsWith(github.head_ref, 'LinuxCommand/')"
+          project: Linux command
+          column: In progress
+          repo-token: ${{ secrets.ACCESS_TOKEN }}
+        if: "contains(github.head_ref, 'LinuxCommand')"
       - name: Assign PullRequest to Project Linux tool
-        uses: technote-space/create-project-card-action@v1
+        uses: alex-page/github-project-automation-plus@v0.2.4
         with:
-          PROJECT: Linux tool
-          COLUMN: In progress
-        if: "startsWith(github.head_ref, 'LinuxTool/')"
+          project: Linux tool
+          column: In progress
+          repo-token: ${{ secrets.ACCESS_TOKEN }}
+        if: "contains(github.head_ref, 'LinuxTool')"

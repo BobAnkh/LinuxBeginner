@@ -7,14 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     name: A auto-comment to a PR
     steps:
-      - name: Checkout
-        uses: actions/checkout@v1
-
-      - name: Comment PR
-        uses: thollander/actions-comment-pull-request@master
+      - name: comment
+        uses: github-actions-up-and-running/pr-comment@v1.0.0
         with:
+          repo-token: ${{ secrets.ACCESS_TOKEN }}
           message: 'Thanks for opening this pull request! Please check out the contributing guidelines in README.md.'
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   assignAuthor:
     name: Assign author to PR
     runs-on: ubuntu-latest
