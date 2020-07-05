@@ -36,7 +36,7 @@ ln: test: hard link not allowed for directory
 
 ## 5. 常用形式
 
-为test.md创建硬链接文件：
+为test.md创建硬链接文件，并使用ls -i命令来查看当前目录所有文件的inode（可以发现链接文件和源文件的inode是相同的）：
 
 ```console
 $ touch test.md
@@ -69,7 +69,7 @@ $ tree
 为目录文件创建软链接：
 
 ```console
-$ ln -s son /home/jwwwb/test/son1
+$ ln -s son /root/test/son1
 $ tree
 .
 ├── son
@@ -80,6 +80,4 @@ $ tree
 
 2 directories, 3 files
 ```
-
-
 
