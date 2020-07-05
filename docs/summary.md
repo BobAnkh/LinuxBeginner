@@ -24,6 +24,7 @@
   - [20. chmod](LinuxCommand/chmod.md)
   - [21. tar](LinuxCommand/tar.md)
   - [22. paste](LinuxCommand/paste.md)
+  - [23. ln](LinuxCommand/ln.md)
 
 - [**Linux工具**](LinuxTool/ 'Linux Tool')
   - [1. Tmux](LinuxTool/tmux.md)
