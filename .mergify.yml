@@ -52,7 +52,7 @@ pull_request_rules:
           Please check details or README.md for more information.
   - name: message check comment
     conditions:
-      - status-success=gitmagic/rules
+      - "-status-success=gitmagic/rules"
       - "-closed"
       - "-merged"
       - "-draft"
@@ -66,7 +66,7 @@ pull_request_rules:
     conditions:
       - status-success=Title Validator
       - status-success=gitmagic/rules
-      - "-status-success=validate-branch-name"
+      - status-success=validate-branch-name
       - "-closed"
       - "-draft"
       - "-conflict"
@@ -82,7 +82,7 @@ pull_request_rules:
       - "#approved-reviews-by>=1"
       - status-success=Title Validator
       - status-success=gitmagic/rules
-      - "-status-success=validate-branch-name"
+      - status-success=validate-branch-name
       - "-closed"
       - "-draft"
       - "-conflict"
@@ -100,7 +100,7 @@ pull_request_rules:
       - author=BobAnkh
       - status-success=Title Validator
       - status-success=gitmagic/rules
-      - "-status-success=validate-branch-name"
+      - status-success=validate-branch-name
       - "-closed"
       - "-draft"
       - "-conflict"
