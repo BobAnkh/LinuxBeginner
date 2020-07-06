@@ -50,6 +50,17 @@ pull_request_rules:
           @{{author}}
           Wrong branch name: {{head}}
           Please check details or README.md for more information.
+  - name: branch name check label
+    conditions:
+      - "-status-success=validate-branch-name"
+      - "#label=0"
+      - "-closed"
+      - "-merged"
+      - "-draft"
+    actions:
+      label:
+        add:
+          - "invalid"
   - name: message check comment
     conditions:
       - "-status-success=gitmagic/rules"
