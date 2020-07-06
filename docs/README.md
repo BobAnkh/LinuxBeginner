@@ -17,11 +17,21 @@
 
 ### 关于提交的注意事项
 
-你需要在fork的仓库的一个具有与你所提交的内容相关名称的单独的branch提起Pull Request（PR），同时，从master分支提起的PR将不会被接受。这是因为你从单独分支提起PR时，仍可以通过向该分支进行commit和push来修改内容、持续更新。对于本项目目前而言，提起的PR可以根据所属类别——Linux命令或Linux工具，分别以如下形式命名分支：`LinuxCommand/<number of command><command>`或`LinuxTool/<number of tool><tool>`
+#### 关于Pull Request
+
+你需要在fork的仓库的一个具有与你所提交的内容相关名称的单独的branch提起Pull Request（PR），同时，从master分支提起的PR将不会被接受。这是因为你从单独分支提起PR时，仍可以通过向该分支进行commit和push来修改内容、持续更新。
+
+对于本项目目前而言，提起的PR可以根据所属类别——Linux命令或Linux工具，分别以如下形式命名分支：`LinuxCommand/<number of command><command>`或`LinuxTool/<number of tool><tool>`
 
 > 例如：LinuxCommand/01ls或LinuxTool/02htop等。
 
-此外，在PR的信息框内简单描述本次PR的主要内容，以便reviewer可以较为容易的判断和了解你的想法。同时，基于本项目的情况，可以在计划添加某一新命令或工具时，可以建立新的分支和相关文件后，以`draft pull request`的形式进行序号占位，需要选择已用序号后续紧邻的序号，并且不能够使用未被merge的PR所占用的序号。如果需要进行非内容方面的更改，建议先提出issue进行讨论。**如是对于内容的PR，则PR的标题应以`LinuxCommand:`或以`LinuxTool:`开头**
+此外，在PR的信息框内简单描述本次PR的主要内容，以便reviewer可以较为容易的判断和了解你的想法，该部分不可空缺。同时，基于本项目的情况，可以在计划添加某一新命令或工具时，可以建立新的分支和相关文件后，以`draft pull request`的形式进行序号占位，需要选择已用序号后续紧邻的序号，并且不能够使用未被merge的PR所占用的序号。如果需要进行非内容方面的更改，建议先提出issue进行讨论。**如是对于内容的PR，则PR的标题应以`LinuxCommand:`或以`LinuxTool:`开头**
+
+此外，若有对于html或css文件的修改，需要附上相应的截图
+
+本仓库目前设置了一些自动化检查功能，在提交PR后可稍作等待，根据comment的内容来进行相应处理
+
+#### 关于commit
 
 每个commit建议包含相对单独的内容（即不建议将多类修改大杂烩在一个commit中提交），同时需要在message信息中体现出具体更改
 
@@ -68,7 +78,7 @@
 
 `<footer>`部分只适用于两种情况，若无此两种情况则可略去：其一是不兼容变动——即当前代码与上一版本不兼容，则需以`BREAKING CHANGE`开头描述变动本身、变动理由以及迁移方法；其二是与issue相关，如本次commit是针对某个issue做出的提交，可以在此部分以`Closes #123, #456`这样的形式关闭一个或多个issue
 
-对于commit信息的`<header>`，应当尽量限制在50个字符内，对于其`<body>`部分，每一行应尽量限制在72个字符内
+对于commit信息的`<header>`部分，应当尽量限制在50个字符内，对于其`<body>`部分，每一行应尽量限制在72个字符内
 
 > 例如，对于ls.md的修改，commit信息可以写为：
 
