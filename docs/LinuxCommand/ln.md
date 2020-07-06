@@ -69,7 +69,7 @@ $ tree
 为目录文件创建软链接：
 
 ```console
-$ ln -s son /root/test/son1
+$ ln -s son /folders/test/son1
 $ tree
 .
 ├── son
