@@ -1,7 +1,7 @@
 name: Add a new issue to the specified project column
 on: 
   issues:
-    types: [opened, reopened]
+    types: [opened]
 jobs:
   add-new-issues-to-project-column:
     runs-on: ubuntu-latest

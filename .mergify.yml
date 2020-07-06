@@ -36,7 +36,7 @@ pull_request_rules:
       comment:
         message: |
           @{{author}}
-          Wrong PR Title: 
+          Wrong PR Title: {{title}}
           Title should begin with `LinuxCommand:` or `LinuxTool:`
   - name: branch name check comment
     conditions:
@@ -73,6 +73,18 @@ pull_request_rules:
           @{{author}}
           Contribution Message Convention Tests failed with GitMagic.
           Please check details or README.md for more information.
+  - name: conflict comment
+    conditions:
+      - "-closed"
+      - "-draft"
+      - "-merge"
+      - "conflict"
+    actions:
+      comment:
+        message: |
+          @{{author}}
+          There are some conflicts within your pull request.
+          Could you please fix them?
   - name: All check pass comment
     conditions:
       - status-success=Title Validator
