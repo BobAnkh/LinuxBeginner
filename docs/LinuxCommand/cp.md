@@ -54,12 +54,12 @@ or：cp [选项] -t 目录 源
 
 ## 5. 常用形式
 
-将test文件不改名复制到/tmp文件夹下:
+将test文件不改名复制到当前目录tmp目录下:
 
 ```console
-# touch test
-# cp test tmp
-# tree
+$ touch test
+$ cp test tmp
+$ tree
 .
 ├── test
 └── tmp
@@ -71,14 +71,14 @@ or：cp [选项] -t 目录 源
 若要改名复制，则可用命令：
 
 ```console
-# cp test tmp/test_p
+$ cp test tmp/test_p
 ```
 
 复制目录：
 
 ```console
-# cp -r tmp tmp_p
-# tree
+$ cp -r tmp tmp_p
+$ tree
 .
 ├── test
 ├── tmp
