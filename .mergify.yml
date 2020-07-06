@@ -21,6 +21,7 @@ pull_request_rules:
       - author!=BobAnkh
       - "-draft"
       - "-closed"
+      - "#review-requested=0"
     actions:
       request_reviews:
         users:
@@ -30,30 +31,60 @@ pull_request_rules:
       - "-status-success=Title Validator"
       - "-closed"
       - "-merged"
+      - "-draft"
     actions:
       comment:
         message: |
           @{{author}}
           Wrong PR Title: 
           Title should begin with `LinuxCommand:` or `LinuxTool:`
-  - name: message check
+  - name: branch name check comment
     conditions:
-      - status-success=gitmagic/rules
+      - "-status-success=validate-branch-name"
       - "-closed"
       - "-merged"
+      - "-draft"
     actions:
       comment:
         message: |
           @{{author}}
-          Contribution Criterion Test failed with GitMagic.
-          Please check details for more information.
+          Wrong branch name: {{head}}
+          Please check details or README.md for more information.
+  - name: message check comment
+    conditions:
+      - status-success=gitmagic/rules
+      - "-closed"
+      - "-merged"
+      - "-draft"
+    actions:
+      comment:
+        message: |
+          @{{author}}
+          Contribution Message Convention Tests failed with GitMagic.
+          Please check details or README.md for more information.
+  - name: All check pass comment
+    conditions:
+      - status-success=Title Validator
+      - status-success=gitmagic/rules
+      - "-status-success=validate-branch-name"
+      - "-closed"
+      - "-draft"
+      - "-conflict"
+      - "-merged"
+    actions:
+      comment:
+        message: |
+          All checks passed.
+          Please wait for review.
   - name: Automatic merge on approval
     conditions:
       - author!=BobAnkh
       - "#approved-reviews-by>=1"
       - status-success=Title Validator
       - status-success=gitmagic/rules
+      - "-status-success=validate-branch-name"
       - "-closed"
+      - "-draft"
       - "-conflict"
       - "-merged"
     actions:
@@ -69,7 +100,9 @@ pull_request_rules:
       - author=BobAnkh
       - status-success=Title Validator
       - status-success=gitmagic/rules
+      - "-status-success=validate-branch-name"
       - "-closed"
+      - "-draft"
       - "-conflict"
       - "-merged"
     actions:

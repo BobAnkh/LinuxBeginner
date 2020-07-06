@@ -36,13 +36,5 @@
         "body_cannot_be_empty": true,
         "body_must_include_reproduction_steps": [
             "bug"]
-    },
-    "branch":{
-        "name_must_be_longer_than": 1,
-        "name_must_be_shorter_than": 256,
-        "name_must_include_prefix": {
-            "prefixes": ["feat", "fix", "docs", "refactor", "feature", "style", "test", "chore", "revert", "build", "ci", "perf", "Revert", "LinuxCommand", "LinuxTool"],
-            "require_after_prefix": "/"
-        }
     }
 }
