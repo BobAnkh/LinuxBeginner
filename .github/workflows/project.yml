@@ -1,0 +1,44 @@
+name: Auto project
+
+on:
+  check_suite:
+    types: [completed]
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.x
+      uses: actions/setup-python@v2
+      with:
+        # Python 版本的语义版本范围矩阵或准确的版本
+        python-version: '3.x' 
+        # 可选 - x64 或 x86 架构，默认为 x64
+        architecture: 'x64' 
+    # 您可以打印当前 Python 版本以测试矩阵
+    - name: Display Python version
+      run: python -c "import sys; print(sys.version)"
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip setuptools wheel
+        pip install -r requirements.txt
+    - name: Add to project
+      if: "contains(github.head_ref, 'LinuxCommand') && github.event.pull_request.head.user.id != github.event.pull_request.base.user.id"
+      shell: bash
+      env: 
+        ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}}
+        REPO_NAME: 'BobAnkh/LinuxBeginner'
+        PROJECT_NAME: 'Linux command'
+        COLUMN_NAME: 'In progress'
+      run: python auto_project.py "$ACCESS_TOKEN" "$REPO_NAME" "$PROJECT_NAME" "$COLUMN_NAME"
+    - name: Add to project
+      if: "contains(github.head_ref, 'LinuxTool') && github.event.pull_request.head.user.id != github.event.pull_request.base.user.id"
+      shell: bash
+      env: 
+        ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}}
+        REPO_NAME: 'BobAnkh/LinuxBeginner'
+        PROJECT_NAME: 'Linux tool'
+        COLUMN_NAME: 'In progress'
+      run: python auto_project.py "$ACCESS_TOKEN" "$REPO_NAME" "$PROJECT_NAME" "$COLUMN_NAME"

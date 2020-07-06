@@ -1,6 +1,6 @@
 name: Validate the name of the branch
 on: 
-  issues:
+  pull_request:
     types: [opened, reopened]
 jobs:
   validate-branch-name:
@@ -9,8 +9,8 @@ jobs:
     - name: validate-the-name-of-the-branch
       uses: deepakputhraya/action-branch-name@master
       with:
-        regex: '([a-z])+\/([0-9])*([a-z])*' # Regex the branch should match. This example enforces grouping
-        allowed_prefixes: 'feature,stable,fix,LinuxCommand,LinuxTool' # All branches should start with the given prefix
+        regex: '([a-zA-Z])+\/([a-zA-Z0-9_-])*' # Regex the branch should match. This example enforces grouping
+        allowed_prefixes: 'feat/,fix/,docs/,refactor/,feature/,style/,test/,chore/,revert/,build/,ci/,perf/,Revert/,LinuxCommand/,LinuxTool/' # All branches should start with the given prefix
         ignore: master,develop # Ignore exactly matching branch names from convention
-        min_length: 9 # Min length of the branch name
-        max_length: 32 # Max length of the branch name
+        min_length: 2 # Min length of the branch name
+        max_length: 64 # Max length of the branch name
