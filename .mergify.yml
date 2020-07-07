@@ -48,7 +48,7 @@ pull_request_rules:
       comment:
         message: |
           @{{author}}
-          Wrong branch name: {{head}}
+          Wrong branch name
           Please check details or README.md for more information.
   - name: branch name check label
     conditions:
