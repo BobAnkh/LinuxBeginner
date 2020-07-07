@@ -6,6 +6,8 @@ tar [必要参数] [选择参数] [文件]
 
 ## 2. 基本功能
 
+对指定文件或目录进行打包/解包或压缩/解压缩
+
 ## 3. 常用参数
 
 > 必要参数有如下：
@@ -60,22 +62,40 @@ tar [必要参数] [选择参数] [文件]
 
 ## 4. 注意事项
 
+无
+
 ## 5. 常用形式
 
-`打包非压缩形式.tar：`
+打包非压缩形式`.tar`：
 
-解包：tar -xvf FileName.tar
+```console
+# 解包
+$ tar -xvf FileName.tar
+# 打包
+$ tar -cvf FileName.tar FileName
+```
 
-打包：tar -cvf FileName.tar FileName
+打包压缩形式`.tar.gz`：
 
-`打包压缩形式.tar.gz：`
+```console
+# 解压
+$ tar -zxvf FileName.tar.gz
+# 压缩
+$ tar -zcvf FileName.tar.gz FileName
+```
 
-解压：tar -zxvf FileName.tar.gz
+打包压缩形式`.tar.bz2`：
 
-压缩：tar -zcvf FileName.tar.gz FileName
+```console
+# 解压
+$ tar -jxvf FileName.tar.bz2
+# 压缩
+$ tar -jcvf FileName.tar.bz2 FileName
+```
 
-`打包压缩形式.tar.bz2：`
+将文件解压或解包到指定目录（以解包为例）：
 
-解压：tar -jxvf FileName.tar.bz2
+```console
+$ tar -xvf FileName.tar -C DIR
+```
 
-压缩：tar -jcvf FileName.tar.bz2 FileName
