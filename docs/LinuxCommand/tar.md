@@ -98,4 +98,3 @@ $ tar -jcvf FileName.tar.bz2 FileName
 ```console
 $ tar -xvf FileName.tar -C DIR
 ```
-
