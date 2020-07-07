@@ -6,6 +6,5 @@
     "MD014": false,
     "MD026": { "punctuation": ".,;。，；"},
     "MD033": false,
-    "no-hard-tabs": false,
     "whitespace": false
 }
