@@ -77,7 +77,7 @@ pull_request_rules:
     conditions:
       - "-closed"
       - "-draft"
-      - "-merge"
+      - "-merged"
       - "conflict"
     actions:
       comment:

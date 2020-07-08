@@ -47,5 +47,3 @@
 [22.  paste](LinuxCommand/paste.md)
 
 [23.  ln](LinuxCommand/ln.md)
-
-[24.  env](LinuxCommand/env.md)

@@ -90,3 +90,6 @@ checkUpToDate:
   # It helps avoid multiple heads in alembic migrations in a collaborative development project.
     - /docs/README.md
     - /docs/summary.md
+    - /docs/index.html
+    - /docs/navbar.md
+    - /docs/cover.md
