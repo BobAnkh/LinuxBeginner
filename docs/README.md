@@ -2,34 +2,29 @@
 
 ![Help-Wanted](https://img.shields.io/badge/HelpWanted-Unfinished-red)
 
-本项目由BobAnkh发起，旨在为Linux初学者整理一些常用命令和常用工具的文档
+本项目主要内容是为Linux初学者所整理的一些常用命令和常用工具的文档，除了基本的功能介绍、安装、使用方法外，也添加了相应的常用示例，便于速查使用
 
 项目网址：[https://blog.bobankh.com/LinuxBeginner/](https://blog.bobankh.com/LinuxBeginner/)
 
-## To Do
+## 背景
 
-- 为所有Linux命令进一步添加常用的使用情况样例以及注意事项
-- 添加更多的常用工具
+本项目由BobAnkh发起，旨在为Linux初学者整理一些常用命令和常用工具的文档
 
-## How to Contribute
+## 使用说明
 
-我们非常欢迎任何人为这个仓库添加新的内容，只要它对于这个仓库是具有意义的
+本项目主要是一个文档合集，也使用了[docsify](https://docsify.js.org/#/)构筑了Github Page，具体网址为：[LinuxBeginner](https://blog.bobankh.com/LinuxBeginner/)
+
+## 维护者
+
+[@BobAnkh](https://github.com/BobAnkh)
+
+## 如何贡献
+
+我们非常欢迎任何人为本项目贡献自己的力量，为这个仓库添加新的内容，只要它对于这个仓库是具有意义的
+
+欢迎随时提出issue或者提交PR，具体的注意事项如下
 
 ### 关于提交的注意事项
-
-#### 关于Pull Request
-
-你需要在fork的仓库的一个具有与你所提交的内容相关名称的单独的branch提起Pull Request（PR），同时，从master分支提起的PR将不会被接受。这是因为你从单独分支提起PR时，仍可以通过向该分支进行commit和push来修改内容、持续更新。
-
-对于本项目目前而言，提起的PR可以根据所属类别——Linux命令或Linux工具，分别以如下形式命名分支：`LinuxCommand/<number of command><command>`或`LinuxTool/<number of tool><tool>`
-
-> 例如：LinuxCommand/01ls或LinuxTool/02htop等。
-
-此外，在PR的信息框内简单描述本次PR的主要内容，以便reviewer可以较为容易的判断和了解你的想法，该部分不可空缺。同时，基于本项目的情况，可以在计划添加某一新命令或工具时，可以建立新的分支和相关文件后，以`draft pull request`的形式进行序号占位，需要选择已用序号后续紧邻的序号，并且不能够使用未被merge的PR所占用的序号。如果需要进行非内容方面的更改，建议先提出issue进行讨论。**如是对于内容的PR，则PR的标题应以`LinuxCommand:`或以`LinuxTool:`开头**
-
-此外，若有对于html或css文件的修改，需要附上相应的截图
-
-本仓库目前设置了一些自动化检查功能，在提交PR后可稍作等待，根据comment的内容来进行相应处理
 
 #### 关于commit
 
@@ -100,9 +95,23 @@ docs(ls.md): fix a typo
 - change `-` to `--`
 ```
 
+#### 关于Pull Request
+
+你需要在fork的仓库的一个具有与你所提交的内容相关名称的单独的branch提起Pull Request（PR）。从master分支提起的PR将不会被接受。这是因为你从单独分支提起PR时，仍可以通过向该分支进行commit和push来修改内容、持续更新
+
+对于本项目目前而言，提起的PR可以根据所属类别——Linux命令或Linux工具，分别以如下形式命名分支：`LinuxCommand/<number of command><command>`或`LinuxTool/<number of tool><tool>`
+
+> 例如：LinuxCommand/01ls或LinuxTool/02htop等。
+
+在PR的信息框内简单描述本次PR的主要内容，以便reviewer可以较为容易的判断和了解你的想法，该部分不可空缺。同时，基于本项目的情况，可以在计划添加某一新命令或工具时，可以建立新的分支和相关文件后，以`draft pull request`的形式进行序号占位，需要选择已用序号后续紧邻的序号，并且不能够使用未被merge的PR所占用的序号。如果需要进行非内容方面的更改，建议先提出issue进行讨论。**如是对于内容的PR，则PR的标题应以`LinuxCommand:`或以`LinuxTool:`开头**
+
+此外，若有对于html或css文件的修改，需要附上相应的截图
+
+本仓库目前设置了一些自动化检查功能，在提交PR后可稍作等待，根据comment的内容和check的details来进行相应处理
+
 ### 关于内容的注意事项
 
-> 目前主要以Linux命令和Linux工具为主要的工作重心，如果认为有其他方面也是可以添加的，欢迎提出issue或以类似的文件形式组织后pr
+> 目前主要以Linux命令和Linux工具为主要的工作重心，如果认为有其他方面也是可以添加的，欢迎提出issue或以类似的文件形式组织后PR
 
 - 对于Linux命令而言，目前计划涉及内容如下：
     1. 命令格式
@@ -117,4 +126,8 @@ docs(ls.md): fix a typo
     3. 如何使用（可包含基本参数和基本指令）
     4. 常见使用方式和注意事项
 
-**欢迎大家来为本项目贡献自己的力量，如果有问题欢迎随时提出issue或通过email等形式交流**
+### 贡献者
+
+## 使用许可
+
+[Apache 2.0](LICENSE) © BobAnkh
