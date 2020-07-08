@@ -20,7 +20,7 @@ env [选项] [NAME=VALUE] [COMMAND]
 
 ## 4. 注意事项
 
-在env命令中对环境变量的修改只在该命令行中有效，并没有实际修改/etc/profile或bashrc文件中的值
+在env命令中对环境变量的修改只在该命令行中有效，并没有实际修改/etc/profile或.bashrc文件中的值
 
 ## 5. 常用形式
 
