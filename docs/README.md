@@ -78,12 +78,12 @@
 
 `<footer>`部分只适用于两种情况，若无此两种情况则可略去：其一是不兼容变动——即当前代码与上一版本不兼容，则需以`BREAKING CHANGE`开头描述变动本身、变动理由以及迁移方法；其二是与issue相关，如本次commit是针对某个issue做出的提交，可以在此部分以`Closes #123, #456`这样的形式关闭一个或多个issue
 
-对于commit信息的`<header>`部分，应当尽量限制在50个字符内，对于其`<body>`部分，每一行应尽量限制在72个字符内
+对于commit信息的`<header>`部分，应当尽量限制在50个字符及以内，对于其`<body>`部分，每一行应尽量限制在72个字符及以内
 
-> 例如，对于ls.md的修改，commit信息可以写为：
+> 例如，创建了新的文件ls.md以增加新的Linux命令ls，commit信息可以写为：
 
 ```text
-docs(ls.md): add linux command ls
+feat(command): add a new linux command ls
 
 - add basic usage format of command ls
 - add arguments of command ls
@@ -97,7 +97,7 @@ docs(ls.md): add linux command ls
 ```text
 docs(ls.md): fix a typo
 
-- change some `-` to `--`
+- change `-` to `--`
 ```
 
 ### 关于内容的注意事项
