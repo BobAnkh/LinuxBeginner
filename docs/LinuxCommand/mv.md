@@ -10,19 +10,19 @@ mv [选项] 源文件或目录 目标文件或目录
 
 ## 3. 常用参数
 
--b	若需覆盖文件，则覆盖前先行备份。
+-b 若需覆盖文件，则覆盖前先行备份。
 
--f	force 强制的意思，如果目标文件已经存在，不会询问而直接覆盖；
+-f force 强制的意思，如果目标文件已经存在，不会询问而直接覆盖；
 
--i	若目标文件 (destination) 已经存在时，就会询问是否覆盖
+-i 若目标文件 (destination) 已经存在时，就会询问是否覆盖
 
--n	目标文件已存在时，不会覆盖移动，而且不询问用户
+-n 目标文件已存在时，不会覆盖移动，而且不询问用户
 
--u	若目标文件已经存在，且 source 比较新，才会更新(update)
+-u 若目标文件已经存在，且 source 比较新，才会更新(update)
 
--v	显示文件或目录的移动过程
+-v 显示文件或目录的移动过程
 
--t	--target-directory=DIRECTORY move all SOURCE arguments into DIRECTORY，即指定mv的目标目录，该选项适用于移动多个源文件到一个目录的情况，此时目标目录在前，源文件在后。
+-t --target-directory=DIRECTORY move all SOURCE arguments into DIRECTORY，即指定mv的目标目录，该选项适用于移动多个源文件到一个目录的情况，此时目标目录在前，源文件在后。
 
 ## 4. 注意事项
 
@@ -82,4 +82,3 @@ $ tree
 
 2 directories, 1 file
 ```
-
