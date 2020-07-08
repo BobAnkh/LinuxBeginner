@@ -1,6 +1,6 @@
 # Linux Command
 
-> 目前已收录23条Linux命令，仍在持续增加中
+> 目前已收录24条Linux命令，仍在持续增加中
 
 [1. ls](LinuxCommand/ls.md)
 
@@ -47,3 +47,5 @@
 [22.  paste](LinuxCommand/paste.md)
 
 [23.  ln](LinuxCommand/ln.md)
+
+[24.  env](LinuxCommand/env.md)
