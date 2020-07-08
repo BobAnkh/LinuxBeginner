@@ -1,0 +1,17 @@
+name: Add contributors
+on: 
+  schedule:
+    - cron:  '* */24 * * *'
+
+jobs:
+  auto-contributor-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Contribute List
+        uses: akhilmhdh/contributors-readme-action@v1.1
+        with:
+          header: 贡献者
+          columnsPerRow: 6
+          imageSize: 100
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
