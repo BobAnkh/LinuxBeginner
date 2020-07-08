@@ -2,10 +2,6 @@ name: markdown lint
 on:
   pull_request:
     types: [opened, reopened, synchronize, ready_for_review]
-  push:
-    branches:
-      - master
-      - develop
 
 jobs:
   markdownlint-cli-check:
