@@ -29,7 +29,7 @@ for project in projects:
                 cards = column.get_cards()
                 for card in cards: 
                     if pr.issue_url == card.content_url:
-                        print('PR', pr.number, 'is already in column', column.name)
+                        print('PR', pr.number, 'is already in', project.name, 'column', column.name)
                         already_have_it = 1
                         break
                 if already_have_it == 1:
@@ -38,7 +38,7 @@ for project in projects:
                 for column in columns_1:
                     if column.name == COLUMN_NAME:
                         column.create_card(content_id=id, content_type='PullRequest')
-                        print('Add PR', pr.number, 'to column', COLUMN_NAME)
+                        print('Add PR', pr.number, 'to', project.name, 'column', COLUMN_NAME)
     elif project.name == PROJECT_NAME_2:
         columns_2 = project.get_columns()
         for pr in pulls:
@@ -51,7 +51,7 @@ for project in projects:
                 cards = column.get_cards()
                 for card in cards: 
                     if pr.issue_url == card.content_url:
-                        print('PR', pr.number, 'is already in column', column.name)
+                        print('PR', pr.number, 'is already in', project.name, 'column', column.name)
                         already_have_it = 1
                         break
                 if already_have_it == 1:
@@ -60,6 +60,6 @@ for project in projects:
                 for column in columns_2:
                     if column.name == COLUMN_NAME:
                         column.create_card(content_id=id, content_type='PullRequest')
-                        print('Add PR', pr.number, 'to column', COLUMN_NAME)
+                        print('Add PR', pr.number, 'to', project.name, 'column', COLUMN_NAME)
     else:
         pass

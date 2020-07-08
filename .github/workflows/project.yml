@@ -28,5 +28,5 @@ jobs:
         pip install -r requirements.txt
     - name: Add to project
       env: 
-        ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}}
+        ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
       run: python auto_project.py "$ACCESS_TOKEN"
