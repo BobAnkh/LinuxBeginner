@@ -1,1 +1,158 @@
-IyBMaW51eCBCZWdpbm5lcgoKIVtIZWxwLVdhbnRlZF0oaHR0cHM6Ly9pbWcuc2hpZWxkcy5pby9iYWRnZS9IZWxwV2FudGVkLVVuZmluaXNoZWQtcmVkKQoK5pys6aG555uu5Li76KaB5YaF5a655piv5Li6TGludXjliJ3lrabogIXmiYDmlbTnkIbnmoTkuIDkupvluLjnlKjlkb3ku6TlkozluLjnlKjlt6XlhbfnmoTmlofmoaPvvIzpmaTkuobln7rmnKznmoTlip/og73ku4vnu43jgIHlronoo4XjgIHkvb/nlKjmlrnms5XlpJbvvIzkuZ/mt7vliqDkuobnm7jlupTnmoTluLjnlKjnpLrkvovvvIzkvr/kuo7pgJ/mn6Xkvb/nlKgKCumhueebrue9keWdgO+8mltodHRwczovL2Jsb2cuYm9iYW5raC5jb20vTGludXhCZWdpbm5lci9dKGh0dHBzOi8vYmxvZy5ib2JhbmtoLmNvbS9MaW51eEJlZ2lubmVyLykKCiMjIOiDjOaZrwoK5pys6aG555uu55SxQm9iQW5raOWPkei1t++8jOaXqOWcqOS4ukxpbnV45Yid5a2m6ICF5pW055CG5LiA5Lqb5bi455So5ZG95Luk5ZKM5bi455So5bel5YW355qE5paH5qGjCgojIyDkvb/nlKjor7TmmI4KCuacrOmhueebruS4u+imgeaYr+S4gOS4quaWh+aho+WQiOmbhu+8jOS5n+S9v+eUqOS6hltkb2NzaWZ5XShodHRwczovL2RvY3NpZnkuanMub3JnLyMvKeaehOetkeS6hkdpdGh1YiBQYWdl77yM5YW35L2T572R5Z2A5Li677yaW0xpbnV4QmVnaW5uZXJdKGh0dHBzOi8vYmxvZy5ib2JhbmtoLmNvbS9MaW51eEJlZ2lubmVyLykKCiMjIOe7tOaKpOiAhQoKW0BCb2JBbmtoXShodHRwczovL2dpdGh1Yi5jb20vQm9iQW5raCkKCiMjIOWmguS9lei0oeeMrgoK5oiR5Lus6Z2e5bi45qyi6L+O5Lu75L2V5Lq65Li65pys6aG555uu6LSh54yu6Ieq5bex55qE5Yqb6YeP77yM5Li66L+Z5Liq5LuT5bqT5re75Yqg5paw55qE5YaF5a6577yM5Y+q6KaB5a6D5a+55LqO6L+Z5Liq5LuT5bqT5piv5YW35pyJ5oSP5LmJ55qECgrmrKLov47pmo/ml7bmj5Dlh7ppc3N1ZeaIluiAheaPkOS6pFBS77yM5YW35L2T55qE5rOo5oSP5LqL6aG55aaC5LiLCgojIyMg5YWz5LqO5o+Q5Lqk55qE5rOo5oSP5LqL6aG5CgojIyMjIOWFs+S6jmNvbW1pdAoK5q+P5LiqY29tbWl05bu66K6u5YyF5ZCr55u45a+55Y2V54us55qE5YaF5a6577yI5Y2z5LiN5bu66K6u5bCG5aSa57G75L+u5pS55aSn5p2C54Op5Zyo5LiA5LiqY29tbWl05Lit5o+Q5Lqk77yJ77yM5ZCM5pe26ZyA6KaB5ZyobWVzc2FnZeS/oeaBr+S4reS9k+eOsOWHuuWFt+S9k+abtOaUuQoK5pys6aG555uu55qEY29tbWl05L+h5oGv6KeE6IyD5Li76KaB5Y+C6ICD55uu5YmN5L2/55So5pyA5Li65bm/5rOb55qEW0FuZ3VsYXJKUyBHaXQgQ29tbWl0IE1lc3NhZ2UgQ29udmVudGlvbnNdKGh0dHBzOi8vZG9jcy5nb29nbGUuY29tL2RvY3VtZW50L2QvMVFyREZjSWlQalNMRG4zRUwxNUlKeWdOUGlIT1JnVTFfT09BcVdqaURVNVkvZWRpdCNoZWFkaW5nPWgudXlvNmNiMTJkdDZ3Ke+8mgoKPiBgPHR5cGU+KDxzY29wZT4pOiA8c3ViamVjdD5gCj4KPiAvLyBibGFuayBsaW5lCj4KPiBgPGJvZHk+YAo+Cj4gLy8gYmxhbmsgbGluZQo+Cj4gYDxmb290ZXI+YAoK5a+55LqO5Lu75L2V6aG555uu6ICM6KiA77yM56ys5LiA6KGM5Y2zYDxoZWFkZXI+YOmDqOWIhuaYr+W/hemhu+eahO+8jOWFtuWQjueahGA8Ym9keT5g5ZKMYDxmb290ZXI+YOWImeWPr+S+neaNruWunumZheaDheWGteS6iOS7peecgeeVpQoKYDxoZWFkZXI+YOmDqOWIhuS7heacieS4gOihjO+8jOWFtuS4reW/hemhu+Whq+WGmWA8dHlwZT5g5LiOYDxzdWJqZWN0PmDlrZfmrrXvvIxgPHNjb3BlPmDlrZfmrrXlj6/ku6XpgInloavvvIjkvYbkuZ/lu7rorq7loavlhpnvvIkKCmA8dHlwZT5g5Li76KaB55So5LqO6K+05piOY29tbWl055qE57G75Yir77yM5ZyoYEFuZ3VsYXJKUyBHaXQgQ29tbWl0IE1lc3NhZ2UgQ29udmVudGlvbnNg5Lit77yM5Y+q5YWB6K645L2/55So5Lul5LiLOOS4quagh+ivhu+8mgoKLSBmZWF0OiDlop7liqDmlrDlip/og73vvIhmZWF0dXJl77yJCi0gZml4OiDkv67ooaVidWcKLSBkb2NzOiDlj6rmlLnliqjkuobmlofmoaPvvIhkb2N1bWVudGF0aW9u77yJ55u45YWz55qE5YaF5a65Ci0gc3R5bGU6IOagvOW8j++8jOaMh+S4jeW9seWTjeS7o+eggei/kOihjOeahOWPmOWKqOaIluS4jeW9seWTjeS7o+eggeWQq+S5ieeahOWPmOWKqO+8jOS+i+WmguWOu+aOieepuuagvOOAgeaUueWPmOe8qei/m+OAgeWinuWIoOWIhuWPt+etiQotIHJlZmFjdG9yOiDph43mnoTvvIjljbPkuI3mmK/mlrDlop7lip/og73vvIzkuZ/kuI3mmK/kv67mlLlidWfnmoTku6PnoIHlj5jliqjvvIkKLSB0ZXN0OiDlop7liqDmtYvor5XmiJbkv67mlLnnjrDmnInmtYvor5UKLSBjaG9yZTog5p6E5bu66L+H56iL5oiW6L6F5Yqp5bel5YW355qE5Y+Y5YqoCi0gcmV2ZXJ0OiDlpoLmnpzlvZPliY1jb21taXTmmK/nlKjkuo7mkqTplIDku6XliY3nmoRjb21taXTvvIzlubblnKjlkI7pnaLot5/pmo/ooqvmkqTplIBjb21taXTnmoRgPGhlYWRlcj5g77yM5bm25LiUYDxib2R5PmDpg6jliIbpnIDkuLrmiafooYxgZ2l0IHJldmVydGDmiYDmiZPljbDnmoTkv6Hmga8KCuWvueS6juacrOmhueebruiAjOiogO+8jOWmguaciemcgOimge+8jOS6puWPr+S9v+eUqOWmguS4i+agh+ivhu+8mgoKLSBidWlsZDog5p6E6YCg5bel5YW35oiW5aSW6YOo5L6d6LWW55qE5pS55Yqo77yM5aaCd2VicGFjaywgbnBtCi0gcGVyZjog5o+Q6auY5oCn6IO955qE5pS55YqoCi0gY2k6IOS4jkNJ77yI5oyB57ut6ZuG5oiQ77yJ5pyJ5YWz55qE5pS55YqoCgrlpoLkuIDmrKHmlLnliqjkuK3kuI7lpJrkuKpgPHR5cGU+YOebuOWFs++8jOWImeS8mOWFiOS9v+eUqGBmZWF0YOS4jmBmaXhg77yM5YW25qyh5L2/55SoYEFuZ3VsYXJKUyBHaXQgQ29tbWl0IE1lc3NhZ2UgQ29udmVudGlvbnNg5Lit6KeE5a6a55qE5Ymp5L2ZNuS4qu+8jOacgOWQjuWImeaYr+mSiOWvueeJueauiumcgOimgeeahOS9meS4izPkuKoKCmA8c2NvcGU+YOS4reS4u+imgeaPj+i/sGNvbW1pdOW9seWTjeeahOiMg+WbtO+8jOinhuWFt+S9k+aUueWKqOaDheWGteiAjOWumu+8jOWmguWPr+S7peWhq+WGmeaJgOaUueWKqOeahOaWh+S7tu+8iOWmguacieWkmuS4quaWh+S7tu+8jOWImeWPr+S7pee7n+S4gOWhq+WGmeWFtuaJgOWxnuaooeWdl+aIlumhueebruWQje+8iQoKYDxzdWJqZWN0PmDkuK3kuLvopoHmmK/mnKzmrKFjb21taXTnm67nmoTnmoTnroDnn63mj4/ov7DvvIzopoHmsYLku6Xliqjor43lvIDlpLTvvIzkvb/nlKjnrKzkuIDkurrnp7DnjrDlnKjml7bvvIzlubbkuJTpppblrZfmr43lsI/lhpnvvIznu5PlsL7ml6DpnIDmt7vliqDlj6Xlj7cKCmA8Ym9keT5g6YOo5YiG5piv5a+55LqO5pys5qyhY29tbWl055qE6K+m57uG5o+P6L+w77yM5bu66K6u5L2/55SoYC1g56ym5Y+35YiX5YaZ5oiQ5aSa6KGM77yM5ZCM5qC36KaB5rGC5L2/55So56ys5LiA5Lq656ew546w5Zyo5pe277yM5bm25LiU5bqU5b2T6K+05piO5Luj56CB5Y+Y5Yqo55qE5Yqo5py65Lul5Y+K5LiO5LmL5YmN55qE5beu5byC5a+55q+UCgpgPGZvb3Rlcj5g6YOo5YiG5Y+q6YCC55So5LqO5Lik56eN5oOF5Ya177yM6Iul5peg5q2k5Lik56eN5oOF5Ya15YiZ5Y+v55Wl5Y6777ya5YW25LiA5piv5LiN5YW85a655Y+Y5Yqo4oCU4oCU5Y2z5b2T5YmN5Luj56CB5LiO5LiK5LiA54mI5pys5LiN5YW85a6577yM5YiZ6ZyA5LulYEJSRUFLSU5HIENIQU5HRWDlvIDlpLTmj4/ov7Dlj5jliqjmnKzouqvjgIHlj5jliqjnkIbnlLHku6Xlj4rov4Hnp7vmlrnms5XvvJvlhbbkuozmmK/kuI5pc3N1ZeebuOWFs++8jOWmguacrOasoWNvbW1pdOaYr+mSiOWvueafkOS4qmlzc3Vl5YGa5Ye655qE5o+Q5Lqk77yM5Y+v5Lul5Zyo5q2k6YOo5YiG5LulYENsb3NlcyAjMTIzLCAjNDU2YOi/meagt+eahOW9ouW8j+WFs+mXreS4gOS4quaIluWkmuS4qmlzc3VlCgrlr7nkuo5jb21taXTkv6Hmga/nmoRgPGhlYWRlcj5g6YOo5YiG77yM5bqU5b2T5bC96YeP6ZmQ5Yi25ZyoNTDkuKrlrZfnrKblj4rku6XlhoXvvIzlr7nkuo7lhbZgPGJvZHk+YOmDqOWIhu+8jOavj+S4gOihjOW6lOWwvemHj+mZkOWItuWcqDcy5Liq5a2X56ym5Y+K5Lul5YaFCgo+IOS+i+Wmgu+8jOWIm+W7uuS6huaWsOeahOaWh+S7tmxzLm1k5Lul5aKe5Yqg5paw55qETGludXjlkb3ku6Rsc++8jGNvbW1pdOS/oeaBr+WPr+S7peWGmeS4uu+8mgoKYGBgdGV4dApmZWF0KGNvbW1hbmQpOiBhZGQgYSBuZXcgbGludXggY29tbWFuZCBscwoKLSBhZGQgYmFzaWMgdXNhZ2UgZm9ybWF0IG9mIGNvbW1hbmQgbHMKLSBhZGQgYXJndW1lbnRzIG9mIGNvbW1hbmQgbHMKLSBhZGQgY29uc2lkZXJhdGlvbnMgb2YgY29tbWFuZCBscwotIHBsYW4gdG8gYWRkIG1vcmUgY29tbW9uIGV4YW1wbGVzIGluIGZ1dHVyZQotIHBsYW4gdG8gYWRkIGRlc2NyaXB0aW9ucyBpbiB0aGUgZnV0dXJlCmBgYAoKPiDlj4jkvovlpoLvvIzlr7nkuo5scy5tZOS4reWPkeeOsOS5puWGmemUmeivr+eahOS/ruaUue+8jGNvbW1pdOS/oeaBr+WPr+S7peWGmeS4uu+8mgoKYGBgdGV4dApkb2NzKGxzLm1kKTogZml4IGEgdHlwbwoKLSBjaGFuZ2UgYC1gIHRvIGAtLWAKYGBgCgojIyMjIOWFs+S6jlB1bGwgUmVxdWVzdAoK5L2g6ZyA6KaB5ZyoZm9ya+eahOS7k+W6k+eahOS4gOS4quWFt+acieS4juS9oOaJgOaPkOS6pOeahOWGheWuueebuOWFs+WQjeensOeahOWNleeLrOeahGJyYW5jaOaPkOi1t1B1bGwgUmVxdWVzdO+8iFBS77yJ44CC5LuObWFzdGVy5YiG5pSv5o+Q6LW355qEUFLlsIbkuI3kvJrooqvmjqXlj5fjgILov5nmmK/lm6DkuLrkvaDku47ljZXni6zliIbmlK/mj5DotbdQUuaXtu+8jOS7jeWPr+S7pemAmui/h+WQkeivpeWIhuaUr+i/m+ihjGNvbW1pdOWSjHB1c2jmnaXkv67mlLnlhoXlrrnjgIHmjIHnu63mm7TmlrAKCuWvueS6juacrOmhueebruebruWJjeiAjOiogO+8jOaPkOi1t+eahFBS5Y+v5Lul5qC55o2u5omA5bGe57G75Yir4oCU4oCUTGludXjlkb3ku6TmiJZMaW51eOW3peWFt++8jOWIhuWIq+S7peWmguS4i+W9ouW8j+WRveWQjeWIhuaUr++8mmBMaW51eENvbW1hbmQvPG51bWJlciBvZiBjb21tYW5kPjxjb21tYW5kPmDmiJZgTGludXhUb29sLzxudW1iZXIgb2YgdG9vbD48dG9vbD5gCgo+IOS+i+Wmgu+8mkxpbnV4Q29tbWFuZC8wMWxz5oiWTGludXhUb29sLzAyaHRvcOetieOAggoK5ZyoUFLnmoTkv6Hmga/moYblhoXnroDljZXmj4/ov7DmnKzmrKFQUueahOS4u+imgeWGheWuue+8jOS7peS+v3Jldmlld2Vy5Y+v5Lul6L6D5Li65a655piT55qE5Yik5pat5ZKM5LqG6Kej5L2g55qE5oOz5rOV77yM6K+l6YOo5YiG5LiN5Y+v56m657y644CC5ZCM5pe277yM5Z+65LqO5pys6aG555uu55qE5oOF5Ya177yM5Y+v5Lul5Zyo6K6h5YiS5re75Yqg5p+Q5LiA5paw5ZG95Luk5oiW5bel5YW35pe277yM5Y+v5Lul5bu656uL5paw55qE5YiG5pSv5ZKM55u45YWz5paH5Lu25ZCO77yM5LulYGRyYWZ0IHB1bGwgcmVxdWVzdGDnmoTlvaLlvI/ov5vooYzluo/lj7fljaDkvY3vvIzpnIDopoHpgInmi6nlt7LnlKjluo/lj7flkI7nu63ntKfpgrvnmoTluo/lj7fvvIzlubbkuJTkuI3og73lpJ/kvb/nlKjmnKrooqttZXJnZeeahFBS5omA5Y2g55So55qE5bqP5Y+344CC5aaC5p6c6ZyA6KaB6L+b6KGM6Z2e5YaF5a655pa56Z2i55qE5pu05pS577yM5bu66K6u5YWI5o+Q5Ye6aXNzdWXov5vooYzorqjorrrjgIIqKuWmguaYr+WvueS6juWGheWuueeahFBS77yM5YiZUFLnmoTmoIfpopjlupTku6VgTGludXhDb21tYW5kOmDmiJbku6VgTGludXhUb29sOmDlvIDlpLQqKgoK5q2k5aSW77yM6Iul5pyJ5a+55LqOaHRtbOaIlmNzc+aWh+S7tueahOS/ruaUue+8jOmcgOimgemZhOS4iuebuOW6lOeahOaIquWbvgoK5pys5LuT5bqT55uu5YmN6K6+572u5LqG5LiA5Lqb6Ieq5Yqo5YyW5qOA5p+l5Yqf6IO977yM5Zyo5o+Q5LqkUFLlkI7lj6/nqI3kvZznrYnlvoXvvIzmoLnmja5jb21tZW5055qE5YaF5a655ZKMY2hlY2vnmoRkZXRhaWxz5p2l6L+b6KGM55u45bqU5aSE55CGCgojIyMg5YWz5LqO5YaF5a6555qE5rOo5oSP5LqL6aG5Cgo+IOebruWJjeS4u+imgeS7pUxpbnV45ZG95Luk5ZKMTGludXjlt6XlhbfkuLrkuLvopoHnmoTlt6XkvZzph43lv4PvvIzlpoLmnpzorqTkuLrmnInlhbbku5bmlrnpnaLkuZ/mmK/lj6/ku6Xmt7vliqDnmoTvvIzmrKLov47mj5Dlh7ppc3N1ZeaIluS7peexu+S8vOeahOaWh+S7tuW9ouW8j+e7hOe7h+WQjlBSCgotIOWvueS6jkxpbnV45ZG95Luk6ICM6KiA77yM55uu5YmN6K6h5YiS5raJ5Y+K5YaF5a655aaC5LiL77yaCiAgICAxLiDlkb3ku6TmoLzlvI8KICAgIDIuIOWfuuacrOWKn+iDvQogICAgMy4g5bi455So5Y+C5pWwCiAgICA0LiDms6jmhI/kuovpobnvvIjov5nkuIDpobnlj6/ku6XmsqHmnInvvInvvIzkvovlpoLvvJrlnKhybeWRveS7pOS4remcgOimgeazqOaEj+acgOWlveS4jeimgeaJp+ihjOW9ouWmgmBzdWRvIHJtIC1yZiAvYOi/meagt+eahOWRveS7pO+8jOS7pemBv+WFjeS4jeW/heimgeeahOm6u+eDpgogICAgNS4g5bi455So5b2i5byP77yM5Y2z5bi455So5ZG95Luk5Y+C5pWw5Y+K5YW35L2T55qE5L2/55So5Zy65pmv77yM5L6L5aaC77yabHPlkb3ku6TluLjnlKhgbHMgLWFsYOS7peWPimBscyAtaGFsYOeUqOS6juafpeeci+WFt+S9k+WQhOaWh+S7tuaDheWGte+8jOS4lOWQjuiAheaYr+S7pWh1bWFuLXJlYWRhYmxl5b2i5byP5ZGI546w55qECgotIOWvueS6jkxpbnV45bel5YW36ICM6KiA77yM55uu5YmN6K6h5YiS5raJ5Y+K5YaF5a655aaC5LiL77yaCiAgICAxLiDln7rmnKzlip/nlKjku4vnu40KICAgIDIuIOWmguS9leWuieijhQogICAgMy4g5aaC5L2V5L2/55So77yI5Y+v5YyF5ZCr5Z+65pys5Y+C5pWw5ZKM5Z+65pys5oyH5Luk77yJCiAgICA0LiDluLjop4Hkvb/nlKjmlrnlvI/lkozms6jmhI/kuovpobkKCiMjIyDotKHnjK7ogIUKCjx0YWJsZT4KPHRyPgogICAgPHRkIGFsaWduPSJjZW50ZXIiPgogICAgICAgIDxhIGhyZWY9aHR0cHM6Ly9naXRodWIuY29tL0JvYkFua2g+CiAgICAgICAgICAgIDxpbWcgc3JjPWh0dHBzOi8vYXZhdGFyczIuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3UvNDQzMzM2Njk/dj00IHdpZHRoPSIxMDA7IiBhbHQ9Qm9iQW5raC8+CiAgICAgICAgICAgIDxiciAvPgogICAgICAgICAgICA8c3ViPjxiPkJvYkFua2g8L2I+PC9zdWI+CiAgICAgICAgPC9hPgogICAgPC90ZD4KICAgIDx0ZCBhbGlnbj0iY2VudGVyIj4KICAgICAgICA8YSBocmVmPWh0dHBzOi8vZ2l0aHViLmNvbS9qd2I1Mjg+CiAgICAgICAgICAgIDxpbWcgc3JjPWh0dHBzOi8vYXZhdGFyczAuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3UvNTM3OTk5Mjc/dj00IHdpZHRoPSIxMDA7IiBhbHQ9and3d2IvPgogICAgICAgICAgICA8YnIgLz4KICAgICAgICAgICAgPHN1Yj48Yj5qd3d3YjwvYj48L3N1Yj4KICAgICAgICA8L2E+CiAgICA8L3RkPgogICAgPHRkIGFsaWduPSJjZW50ZXIiPgogICAgICAgIDxhIGhyZWY9aHR0cHM6Ly9naXRodWIuY29tL0tlbGx5NTEwPgogICAgICAgICAgICA8aW1nIHNyYz1odHRwczovL2F2YXRhcnMwLmdpdGh1YnVzZXJjb250ZW50LmNvbS91LzQ5MTIyNTkwP3Y9NCB3aWR0aD0iMTAwOyIgYWx0PUtlbGx5NTEwLz4KICAgICAgICAgICAgPGJyIC8+CiAgICAgICAgICAgIDxzdWI+PGI+S2VsbHk1MTA8L2I+PC9zdWI+CiAgICAgICAgPC9hPgogICAgPC90ZD4KPC90cj4KPC90YWJsZT4KCiMjIOS9v+eUqOiuuOWPrwoKW0FwYWNoZSAyLjBdKExJQ0VOU0UpIMKpIEJvYkFua2gK
+# Linux Beginner
+
+![Help-Wanted](https://img.shields.io/badge/HelpWanted-Unfinished-red)
+
+本项目主要内容是为Linux初学者所整理的一些常用命令和常用工具的文档，除了基本的功能介绍、安装、使用方法外，也添加了相应的常用示例，便于速查使用
+
+项目网址：[https://blog.bobankh.com/LinuxBeginner/](https://blog.bobankh.com/LinuxBeginner/)
+
+## 背景
+
+本项目由BobAnkh发起，旨在为Linux初学者整理一些常用命令和常用工具的文档
+
+## 使用说明
+
+本项目主要是一个文档合集，也使用了[docsify](https://docsify.js.org/#/)构筑了Github Page，具体网址为：[LinuxBeginner](https://blog.bobankh.com/LinuxBeginner/)
+
+## 维护者
+
+[@BobAnkh](https://github.com/BobAnkh)
+
+## 如何贡献
+
+我们非常欢迎任何人为本项目贡献自己的力量，为这个仓库添加新的内容，只要它对于这个仓库是具有意义的
+
+欢迎随时提出issue或者提交PR，具体的注意事项如下
+
+### 关于提交的注意事项
+
+#### 关于commit
+
+每个commit建议包含相对单独的内容（即不建议将多类修改大杂烩在一个commit中提交），同时需要在message信息中体现出具体更改
+
+本项目的commit信息规范主要参考目前使用最为广泛的[AngularJS Git Commit Message Conventions](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#heading=h.uyo6cb12dt6w)：
+
+> `<type>(<scope>): <subject>`
+>
+> // blank line
+>
+> `<body>`
+>
+> // blank line
+>
+> `<footer>`
+
+对于任何项目而言，第一行即`<header>`部分是必须的，其后的`<body>`和`<footer>`则可依据实际情况予以省略
+
+`<header>`部分仅有一行，其中必须填写`<type>`与`<subject>`字段，`<scope>`字段可以选填（但也建议填写）
+
+`<type>`主要用于说明commit的类别，在`AngularJS Git Commit Message Conventions`中，只允许使用以下8个标识：
+
+- feat: 增加新功能（feature）
+- fix: 修补bug
+- docs: 只改动了文档（documentation）相关的内容
+- style: 格式，指不影响代码运行的变动或不影响代码含义的变动，例如去掉空格、改变缩进、增删分号等
+- refactor: 重构（即不是新增功能，也不是修改bug的代码变动）
+- test: 增加测试或修改现有测试
+- chore: 构建过程或辅助工具的变动
+- revert: 如果当前commit是用于撤销以前的commit，并在后面跟随被撤销commit的`<header>`，并且`<body>`部分需为执行`git revert`所打印的信息
+
+对于本项目而言，如有需要，亦可使用如下标识：
+
+- build: 构造工具或外部依赖的改动，如webpack, npm
+- perf: 提高性能的改动
+- ci: 与CI（持续集成）有关的改动
+
+如一次改动中与多个`<type>`相关，则优先使用`feat`与`fix`，其次使用`AngularJS Git Commit Message Conventions`中规定的剩余6个，最后则是针对特殊需要的余下3个
+
+`<scope>`中主要描述commit影响的范围，视具体改动情况而定，如可以填写所改动的文件（如有多个文件，则可以统一填写其所属模块或项目名）
+
+`<subject>`中主要是本次commit目的的简短描述，要求以动词开头，使用第一人称现在时，并且首字母小写，结尾无需添加句号
+
+`<body>`部分是对于本次commit的详细描述，建议使用`-`符号列写成多行，同样要求使用第一人称现在时，并且应当说明代码变动的动机以及与之前的差异对比
+
+`<footer>`部分只适用于两种情况，若无此两种情况则可略去：其一是不兼容变动——即当前代码与上一版本不兼容，则需以`BREAKING CHANGE`开头描述变动本身、变动理由以及迁移方法；其二是与issue相关，如本次commit是针对某个issue做出的提交，可以在此部分以`Closes #123, #456`这样的形式关闭一个或多个issue
+
+对于commit信息的`<header>`部分，应当尽量限制在50个字符及以内，对于其`<body>`部分，每一行应尽量限制在72个字符及以内
+
+> 例如，创建了新的文件ls.md以增加新的Linux命令ls，commit信息可以写为：
+
+```text
+feat(command): add a new linux command ls
+
+- add basic usage format of command ls
+- add arguments of command ls
+- add considerations of command ls
+- plan to add more common examples in future
+- plan to add descriptions in the future
+```
+
+> 又例如，对于ls.md中发现书写错误的修改，commit信息可以写为：
+
+```text
+docs(ls.md): fix a typo
+
+- change `-` to `--`
+```
+
+#### 关于Pull Request
+
+你需要在fork的仓库的一个具有与你所提交的内容相关名称的单独的branch提起Pull Request（PR）。从master分支提起的PR将不会被接受。这是因为你从单独分支提起PR时，仍可以通过向该分支进行commit和push来修改内容、持续更新
+
+对于本项目目前而言，提起的PR可以根据所属类别——Linux命令或Linux工具，分别以如下形式命名分支：`LinuxCommand/<number of command><command>`或`LinuxTool/<number of tool><tool>`
+
+> 例如：LinuxCommand/01ls或LinuxTool/02htop等。
+
+在PR的信息框内简单描述本次PR的主要内容，以便reviewer可以较为容易的判断和了解你的想法，该部分不可空缺。同时，基于本项目的情况，可以在计划添加某一新命令或工具时，可以建立新的分支和相关文件后，以`draft pull request`的形式进行序号占位，需要选择已用序号后续紧邻的序号，并且不能够使用未被merge的PR所占用的序号。如果需要进行非内容方面的更改，建议先提出issue进行讨论。**如是对于内容的PR，则PR的标题应以`LinuxCommand:`或以`LinuxTool:`开头**
+
+此外，若有对于html或css文件的修改，需要附上相应的截图
+
+本仓库目前设置了一些自动化检查功能，在提交PR后可稍作等待，根据comment的内容和check的details来进行相应处理
+
+### 关于内容的注意事项
+
+> 目前主要以Linux命令和Linux工具为主要的工作重心，如果认为有其他方面也是可以添加的，欢迎提出issue或以类似的文件形式组织后PR
+
+- 对于Linux命令而言，目前计划涉及内容如下：
+    1. 命令格式
+    2. 基本功能
+    3. 常用参数
+    4. 注意事项（这一项可以没有），例如：在rm命令中需要注意最好不要执行形如`sudo rm -rf /`这样的命令，以避免不必要的麻烦
+    5. 常用形式，即常用命令参数及具体的使用场景，例如：ls命令常用`ls -al`以及`ls -hal`用于查看具体各文件情况，且后者是以human-readable形式呈现的
+
+- 对于Linux工具而言，目前计划涉及内容如下：
+    1. 基本功用介绍
+    2. 如何安装
+    3. 如何使用（可包含基本参数和基本指令）
+    4. 常见使用方式和注意事项
+
+### 贡献者
+
+<table>
+<tr>
+                <td align="center">
+                    <a href="https://github.com/BobAnkh">
+                        <img src="https://avatars2.githubusercontent.com/u/44333669?v=4" width="100;" alt="BobAnkh"/>
+                        <br />
+                        <sub><b>BobAnkh</b></sub>
+                    </a>
+                </td>
+                <td align="center">
+                    <a href="https://github.com/jwb528">
+                        <img src="https://avatars0.githubusercontent.com/u/53799927?v=4" width="100;" alt="jwb528"/>
+                        <br />
+                        <sub><b>Jwwwb</b></sub>
+                    </a>
+                </td>
+                <td align="center">
+                    <a href="https://github.com/Kelly510">
+                        <img src="https://avatars3.githubusercontent.com/u/49122590?v=4" width="100;" alt="Kelly510"/>
+                        <br />
+                        <sub><b>Kelly510</b></sub>
+                    </a>
+                </td></tr>
+</table>
+
+## 使用许可
+
+[Apache 2.0](LICENSE) © BobAnkh
