@@ -9,7 +9,7 @@
         "subject_must_be_in_tense": "imperative",
         "subject_must_not_end_with_dot": true,
         "subject_must_include_prefix": {
-            "prefixes": ["feat", "fix", "docs", "refactor", "feature", "style", "test", "chore", "revert", "build", "ci", "perf", "Revert", "Merge", "merge"]
+            "prefixes": ["feat", "fix", "docs", "refactor", "feature", "style", "test", "chore", "revert", "build", "ci", "perf"]
         },
         "body_lines_must_be_shorter_than": 73
     },

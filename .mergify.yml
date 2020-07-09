@@ -28,7 +28,7 @@ pull_request_rules:
           - BobAnkh
   - name: Title Validator comment
     conditions:
-      - "-status-success=Title Validator"
+      - "status-failure=Title Validator"
       - "-closed"
       - "-merged"
       - "-draft"
@@ -40,7 +40,7 @@ pull_request_rules:
           Title should begin with `LinuxCommand:` or `LinuxTool:`
   - name: branch name check comment
     conditions:
-      - "-status-success=validate-branch-name"
+      - "status-failure=validate-branch-name"
       - "-closed"
       - "-merged"
       - "-draft"
@@ -52,7 +52,7 @@ pull_request_rules:
           Please check details or README.md for more information.
   - name: branch name check label
     conditions:
-      - "-status-success=validate-branch-name"
+      - "status-failure=validate-branch-name"
       - "#label=0"
       - "-closed"
       - "-merged"
@@ -63,7 +63,7 @@ pull_request_rules:
           - "invalid"
   - name: message check comment
     conditions:
-      - "-status-success=gitmagic/rules"
+      - "status-failure=gitmagic/rules"
       - "-closed"
       - "-merged"
       - "-draft"
