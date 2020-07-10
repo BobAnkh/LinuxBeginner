@@ -4,7 +4,9 @@
 ![github-pages](https://img.shields.io/github/deployments/BobAnkh/LinuxBeginner/github-pages?color=blue&logo=github)
 ![last-commit](https://img.shields.io/github/last-commit/BobAnkh/LinuxBeginner?logo=git&logoColor=white)
 
-本项目主要内容是为Linux初学者所整理的一些常用命令和常用工具的文档，除了基本的功能介绍、安装、使用方法外，也添加了相应的常用示例，便于速查使用
+本项目主要内容是为Linux初学者所整理的一些常用命令和常用工具的文档
+
+除了基本的功能介绍、安装、使用方法外，也添加了相应的常用示例，便于速查使用
 
 项目网址：[https://blog.bobankh.com/LinuxBeginner/](https://blog.bobankh.com/LinuxBeginner/)
 
@@ -14,7 +16,7 @@
 
 ## 使用说明
 
-本项目主要是一个文档合集，也使用了[docsify](https://docsify.js.org/#/)构筑了Github Page，具体网址为：[LinuxBeginner](https://blog.bobankh.com/LinuxBeginner/)
+本项目本身是一个文档合集，可以直接查看`docs/`目录下的对应文件，也使用了[docsify](https://docsify.js.org/#/)构筑了Github Page，具体网址为：[LinuxBeginner](https://blog.bobankh.com/LinuxBeginner/)
 
 ## 维护者
 
