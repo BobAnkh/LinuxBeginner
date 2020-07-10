@@ -1,6 +1,8 @@
 # Linux Beginner
 
-![Help-Wanted](https://img.shields.io/badge/HelpWanted-Unfinished-red)
+![license](https://img.shields.io/github/license/BobAnkh/LinuxBeginner?logo=apache)
+![github-pages](https://img.shields.io/github/deployments/BobAnkh/LinuxBeginner/github-pages?color=blue&logo=github)
+![last-commit](https://img.shields.io/github/last-commit/BobAnkh/LinuxBeginner?logo=git&logoColor=white)
 
 本项目主要内容是为Linux初学者所整理的一些常用命令和常用工具的文档，除了基本的功能介绍、安装、使用方法外，也添加了相应的常用示例，便于速查使用
 
@@ -156,4 +158,4 @@ docs(ls.md): fix a typo
 
 ## 使用许可
 
-[Apache 2.0](LICENSE) © BobAnkh
+[Apache-2.0](LICENSE) © BobAnkh
