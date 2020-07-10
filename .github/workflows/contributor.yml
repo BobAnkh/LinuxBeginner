@@ -1,7 +1,7 @@
 name: Add contributors
 on: 
   schedule:
-    - cron:  '* */24 * * *'
+    - cron:  '20 20 * * *'
 
 jobs:
   add-contributors:
