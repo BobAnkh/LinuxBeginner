@@ -10,7 +10,7 @@ CONTRIB_END = '\n\n## 使用许可'
 COLUMN_PER_ROW = 6
 ACCESS_TOKEN = sys.argv[1]
 
-g=Github(ACCESS_TOKEN)
+g = Github(ACCESS_TOKEN)
 repo = g.get_repo(REPO_NAME)
 USER = 0
 head = '''<table>
@@ -45,10 +45,11 @@ head = head + tail
 
 contents = repo.get_contents("docs/README.md")
 base = contents.content
-base = base.replace('\n','')
+base = base.replace('\n', '')
 text = base64.b64decode(base).decode('utf-8')
 str = text.split(CONTRIB)
 end = str[1].split(CONTRIB_END)
 end[0] = head
 text = str[0] + CONTRIB + end[0] + CONTRIB_END + end[1]
-repo.update_file(contents.path, "docs(contrib): update contributors", text, contents.sha)
+repo.update_file(contents.path, "docs(contrib): update contributors", text,
+                 contents.sha)
