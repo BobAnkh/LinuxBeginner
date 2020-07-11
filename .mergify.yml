@@ -1,0 +1,134 @@
+pull_request_rules:
+  - name: Automatic welcome on new pr
+    conditions:
+      - author!=BobAnkh
+      - "-closed"
+    actions:
+      comment:
+        message: |
+          Thanks for opening this pull request! 
+          Please check out the contributing guidelines in README.md.
+  - name: Assign author
+    conditions:
+      - "-closed"
+      - "#assignee=0"
+    actions:
+      assign: 
+        users:
+          - "{{author}}"
+  - name: Assign Reviewer
+    conditions:
+      - author!=BobAnkh
+      - "-draft"
+      - "-closed"
+      - "#review-requested=0"
+    actions:
+      request_reviews:
+        users:
+          - BobAnkh
+  - name: Title Validator comment
+    conditions:
+      - "status-failure=Title Validator"
+      - "-closed"
+      - "-merged"
+      - "-draft"
+    actions:
+      comment:
+        message: |
+          @{{author}}
+          Wrong PR Title: {{title}}
+          Title should begin with `LinuxCommand:` or `LinuxTool:`
+  - name: branch name check comment
+    conditions:
+      - "status-failure=validate-branch-name"
+      - "-closed"
+      - "-merged"
+      - "-draft"
+    actions:
+      comment:
+        message: |
+          @{{author}}
+          Wrong branch name: {{head}}
+          Please check details or README.md for more information.
+  - name: branch name check label
+    conditions:
+      - "status-failure=validate-branch-name"
+      - "#label=0"
+      - "-closed"
+      - "-merged"
+      - "-draft"
+    actions:
+      label:
+        add:
+          - "invalid"
+  - name: message check comment
+    conditions:
+      - "status-failure=gitmagic/rules"
+      - "-closed"
+      - "-merged"
+      - "-draft"
+    actions:
+      comment:
+        message: |
+          @{{author}}
+          Contribution Message Convention Tests failed with GitMagic.
+          Please check details or README.md for more information.
+  - name: conflict comment
+    conditions:
+      - "-closed"
+      - "-draft"
+      - "-merged"
+      - "conflict"
+    actions:
+      comment:
+        message: |
+          @{{author}}
+          There are some conflicts within your pull request.
+          Could you please fix them?
+  - name: All check pass comment
+    conditions:
+      - status-success=Title Validator
+      - status-success=gitmagic/rules
+      - status-success=validate-branch-name
+      - "-closed"
+      - "-draft"
+      - "-conflict"
+      - "-merged"
+    actions:
+      comment:
+        message: |
+          All checks passed.
+          Please wait for review.
+  - name: Automatic merge on approval
+    conditions:
+      - author!=BobAnkh
+      - "#approved-reviews-by>=1"
+      - status-success=Title Validator
+      - status-success=gitmagic/rules
+      - status-success=validate-branch-name
+      - "-closed"
+      - "-draft"
+      - "-conflict"
+      - "-merged"
+    actions:
+      comment:
+        message: |
+          This pull request has been approved by: @{{approved_reviews_by}}
+          Thank you @{{author}} for your contributions!
+      merge:
+        method: merge
+        strict: smart+fasttrack
+  - name: Automatic merge
+    conditions:
+      - author=BobAnkh
+      - status-success=Title Validator
+      - status-success=gitmagic/rules
+      - status-success=validate-branch-name
+      - "-closed"
+      - "-draft"
+      - "-conflict"
+      - "-merged"
+    actions:
+      merge:
+        method: merge
+        strict: smart+fasttrack

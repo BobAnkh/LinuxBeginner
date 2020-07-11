@@ -1,73 +1,100 @@
 # tar
 
-1. 命令格式
+## 1. 命令格式
 
-    tar [必要参数] [选择参数] [文件]
+tar [必要参数] [选择参数] [文件]
 
-2. 常用参数
+## 2. 基本功能
 
-    `必要参数有如下：`
+对指定文件或目录进行打包/解包或压缩/解压缩
 
-    -A 新增压缩文件到已存在的压缩
+## 3. 常用参数
 
-    -B 设置区块大小
+> 必要参数有如下：
 
-    -c 建立新的压缩文件
+```text
+-A 新增压缩文件到已存在的压缩
 
-    -d 记录文件的差别
+-B 设置区块大小
 
-    -r 添加文件到已经压缩的文件
+-c 建立新的压缩文件
 
-    -u 添加改变了和现有的文件到已经存在的压缩文件
+-d 记录文件的差别
 
-    -x 从压缩的文件中提取文件
+-r 添加文件到已经压缩的文件
 
-    -t 显示压缩文件的内容
+-u 添加改变了和现有的文件到已经存在的压缩文件
 
-    -z 支持gzip解压文件
+-x 从压缩的文件中提取文件
 
-    -j 支持bzip2解压文件
+-t 显示压缩文件的内容
 
-    -Z 支持compress解压文件
+-z 支持gzip解压文件
 
-    -v 显示操作过程
+-j 支持bzip2解压文件
 
-    -l 文件系统边界设置
+-Z 支持compress解压文件
 
-    -k 保留原有文件不覆盖
+-v 显示操作过程
 
-    -m 保留文件不被覆盖
+-l 文件系统边界设置
 
-    -W 确认压缩文件的正确性
+-k 保留原有文件不覆盖
 
-    `可选参数如下：`
+-m 保留文件不被覆盖
 
-    -b 设置区块数目
+-W 确认压缩文件的正确性
+```
 
-    -C 切换到指定目录
+> 可选参数如下：
 
-    -f 指定压缩文件
+```text
+-b 设置区块数目
 
-    --help 显示帮助信息
+-C 切换到指定目录
 
-    --version 显示版本信息
+-f 指定压缩文件
 
-3. 注意事项
+--help 显示帮助信息
 
-    `常用形式（打包非压缩形式.tar）：`
+--version 显示版本信息
+```
 
-    解包：tar xvf FileName.tar
+## 4. 注意事项
 
-    打包：tar cvf FileName.tar FileName
+无
 
-    `常用形式（打包压缩形式.tar.gz）：`
+## 5. 常用形式
 
-    解压：tar zxvf FileName.tar.gz
+打包非压缩形式`.tar`：
 
-    压缩：tar zcvf FileName.tar.gz FileName
+```console
+# 解包
+$ tar -xvf FileName.tar
+# 打包
+$ tar -cvf FileName.tar FileName
+```
 
-    `常用形式（打包压缩形式.tar.gz）：`
+打包压缩形式`.tar.gz`：
 
-    解压：tar jxvf FileName.tar.bz2
+```console
+# 解压
+$ tar -zxvf FileName.tar.gz
+# 压缩
+$ tar -zcvf FileName.tar.gz FileName
+```
 
-    压缩：tar jcvf FileName.tar.bz2 FileName
+打包压缩形式`.tar.bz2`：
+
+```console
+# 解压
+$ tar -jxvf FileName.tar.bz2
+# 压缩
+$ tar -jcvf FileName.tar.bz2 FileName
+```
+
+将文件解压或解包到指定目录（以解包为例）：
+
+```console
+$ tar -xvf FileName.tar -C DIR
+```

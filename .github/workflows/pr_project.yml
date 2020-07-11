@@ -1,0 +1,23 @@
+name: Assign PullRequest to Project
+on:
+  pull_request:
+    types: [opened]
+jobs:
+  assignToProject:
+    name: Assign PullRequest to Project
+    runs-on: ubuntu-latest
+    steps:
+      - name: Assign PullRequest to Project Linux command
+        uses: alex-page/github-project-automation-plus@v0.2.4
+        with:
+          project: Linux command
+          column: In progress
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+        if: "contains(github.head_ref, 'LinuxCommand') && github.event.pull_request.head.user.id == github.event.pull_request.base.user.id"
+      - name: Assign PullRequest to Project Linux tool
+        uses: alex-page/github-project-automation-plus@v0.2.4
+        with:
+          project: Linux tool
+          column: In progress
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+        if: "contains(github.head_ref, 'LinuxTool') && github.event.pull_request.head.user.id == github.event.pull_request.base.user.id"
