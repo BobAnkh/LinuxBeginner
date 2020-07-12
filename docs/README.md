@@ -142,21 +142,21 @@ docs(ls.md): fix a typo
         <a href=https://github.com/BobAnkh>
             <img src=https://avatars2.githubusercontent.com/u/44333669?v=4 width="100;" alt=BobAnkh/>
             <br />
-            <sub><b>BobAnkh</b></sub>
+            <sub style="font-size:14px"><b>BobAnkh</b></sub>
         </a>
     </td>
     <td align="center">
         <a href=https://github.com/jwb528>
             <img src=https://avatars0.githubusercontent.com/u/53799927?v=4 width="100;" alt=jwwwb/>
             <br />
-            <sub><b>jwwwb</b></sub>
+            <sub style="font-size:14px"><b>jwwwb</b></sub>
         </a>
     </td>
     <td align="center">
         <a href=https://github.com/Kelly510>
             <img src=https://avatars0.githubusercontent.com/u/49122590?v=4 width="100;" alt=Kelly510/>
             <br />
-            <sub><b>Kelly510</b></sub>
+            <sub style="font-size:14px"><b>Kelly510</b></sub>
         </a>
     </td>
 </tr>
