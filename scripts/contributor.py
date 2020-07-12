@@ -36,7 +36,7 @@ for contributor in contributors:
         <a href={html_url}>
             <img src={avatar_url} width="100;" alt={name}/>
             <br />
-            <sub><b>{name}</b></sub>
+            <sub style="font-size:14px"><b>{name}</b></sub>
         </a>
     </td>'''
     head = head + td
