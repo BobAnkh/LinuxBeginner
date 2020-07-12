@@ -31,7 +31,6 @@ pull_request_rules:
       - "status-failure=Title Validator"
       - "-closed"
       - "-merged"
-      - "-draft"
     actions:
       comment:
         message: |
@@ -43,7 +42,6 @@ pull_request_rules:
       - "status-failure=validate-branch-name"
       - "-closed"
       - "-merged"
-      - "-draft"
     actions:
       comment:
         message: |
@@ -56,7 +54,6 @@ pull_request_rules:
       - "#label=0"
       - "-closed"
       - "-merged"
-      - "-draft"
     actions:
       label:
         add:
@@ -66,7 +63,6 @@ pull_request_rules:
       - "status-failure=gitmagic/rules"
       - "-closed"
       - "-merged"
-      - "-draft"
     actions:
       comment:
         message: |
@@ -106,6 +102,7 @@ pull_request_rules:
       - status-success=Title Validator
       - status-success=gitmagic/rules
       - status-success=validate-branch-name
+      - label!=invalid
       - "-closed"
       - "-draft"
       - "-conflict"
@@ -113,7 +110,10 @@ pull_request_rules:
     actions:
       comment:
         message: |
-          This pull request has been approved by: @{{approved_reviews_by}}
+          This pull request has been approved by: @BobAnkh
+          {% for name in "approved-reviews-by" %}
+          @{{name}}
+          {% endfor %}
           Thank you @{{author}} for your contributions!
       merge:
         method: merge
@@ -124,6 +124,7 @@ pull_request_rules:
       - status-success=Title Validator
       - status-success=gitmagic/rules
       - status-success=validate-branch-name
+      - label!=invalid
       - "-closed"
       - "-draft"
       - "-conflict"

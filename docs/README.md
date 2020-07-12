@@ -16,7 +16,11 @@
 
 ## 使用说明
 
-本项目本身是一个文档合集，可以直接查看`docs/`目录下的对应文件，也使用了[docsify](https://docsify.js.org/#/)构筑了Github Page，具体网址为：[LinuxBeginner](https://blog.bobankh.com/LinuxBeginner/)
+本项目本身是一个文档合集，可以直接查看`docs/`目录下的对应文件
+
+使用了[docsify](https://docsify.js.org/#/)构筑了Github Page，具体网址为：[LinuxBeginner](https://blog.bobankh.com/LinuxBeginner/)
+
+`scripts/`文件夹中包含的是与自动工作流程相关的一些python脚本
 
 ## 维护者
 
@@ -87,7 +91,7 @@ feat(command): add a new linux command ls
 - add basic usage format of command ls
 - add arguments of command ls
 - add considerations of command ls
-- plan to add more common examples in future
+- plan to add more typical examples in future
 - plan to add descriptions in the future
 ```
 
@@ -122,7 +126,7 @@ docs(ls.md): fix a typo
     2. 基本功能
     3. 常用参数
     4. 注意事项（这一项可以没有），例如：在rm命令中需要注意最好不要执行形如`sudo rm -rf /`这样的命令，以避免不必要的麻烦
-    5. 常用形式，即常用命令参数及具体的使用场景，例如：ls命令常用`ls -al`以及`ls -hal`用于查看具体各文件情况，且后者是以human-readable形式呈现的
+    5. 典型示例，即常用命令参数及具体的使用场景，例如：ls命令常用`ls -al`以及`ls -hal`用于查看具体各文件情况，且后者是以human-readable形式呈现的
 
 - 对于Linux工具而言，目前计划涉及内容如下：
     1. 基本功用介绍
