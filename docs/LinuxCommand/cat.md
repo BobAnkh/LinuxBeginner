@@ -4,15 +4,7 @@
 
 cat [选项] [文件]
 
-<<<<<<< HEAD
-2. 常用功能
-
-   cat 命令用于连接文件并打印到标准输出设备上
-
-3. 常用参数
-=======
 ## 2. 基本功能
->>>>>>> 64e33c7d18eb1676d78d0aa3a13c7fcab927aafc
 
 cat 命令用于连接文件并打印到标准输出设备上
 
@@ -34,25 +26,6 @@ cat 命令用于连接文件并打印到标准输出设备上
 
 -T, --show-tabs          将跳格字符显示为 ^I
 
-<<<<<<< HEAD
-4. 注意事项
-
-    tac命令用于将文件已行为单位的反序输出，即第一行最后显示，最后一行先显示，具体用法见tac部分
-
-5. 常用例子
-
-   将file_1.txt中的内容加上行号后输入file_2.txt中：
-
-   ```bash
-   cat -n file_1.txt > file_2.txt
-   ```
-
-   清空file_1.txt中的内容：
-
-   ```bash
-   cat /dev/null > /路径/file_1.txt
-   ```
-=======
 -u                       (被忽略)
 
 -v, --show-nonprinting   使用 ^ 和 M- 引用，除了 LFD 和 TAB 之外
@@ -114,4 +87,3 @@ cat -n file_1.txt > file_2.txt
 ```console
 cat /dev/null > file_1.txt
 ```
->>>>>>> 64e33c7d18eb1676d78d0aa3a13c7fcab927aafc
