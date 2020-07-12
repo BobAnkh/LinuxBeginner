@@ -6,6 +6,8 @@ chmod [-cfvR] [--help] [--version] mode file
 
 ## 2. 基本功能
 
+Linux/Unix的文件调用权限分为三级: 文件拥有者、群组、其他。chmod修改文件的调用权限
+
 ## 3. 常用参数
 
 > 必要参数
@@ -71,3 +73,41 @@ s ：特殊权限
 `chmod 751 file`: 给file的属主分配读、写、执行(7)的权限，给file的所在组分配读、执行(5)的权限，给其他用户分配执行(1)的权限
 
 ## 5. 常用形式
+
+将file.txt设置为所有人可读：
+
+```bash
+chmod ugo+r file.txt
+# or
+chmod a+r file.txt
+```
+
+将file.txt设置为该文件拥有者和同一群组的用户可写入，其他人不可写入：
+
+```bash
+chmod ug+w,o-w file.txt
+```
+
+将当前目录下的文件与目录设置为任何人可读取：
+
+```bash
+chmod -R a+r *
+```
+
+此外chmod也可以用数字来表示权限，语法为`chmod abc file`，其中a,b,c各为一个数字，分别表示User,Group,Other的权限，r=4,w=2,x=1
+
+```text
+若要rwx属性则4+2+1=7
+
+若要rw-属性则4+2=6
+
+若要r-x属性则4+1=5
+```
+
+例如，以下两条命令的效果相同：
+
+```bash
+chmod 771 file
+
+chmod ug=rwx,o=x file
+```
