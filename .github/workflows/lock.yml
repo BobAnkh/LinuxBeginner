@@ -24,7 +24,7 @@ jobs:
           pr-exclude-labels: ''
           pr-lock-labels: ''
           pr-lock-comment: >
-            This pull request has been automatically locked since there has not been any recent activity for five days after it was closed. 
+            This pull request has been automatically locked since there has not been any recent activity after it was closed. 
             Please open a new issue or pull request.
           pr-lock-reason: 'resolved'
           process-only: ''
