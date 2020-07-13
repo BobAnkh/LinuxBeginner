@@ -35,3 +35,9 @@ head -n 5 file.log
 ```bash
 head -c 20 file.log
 ```
+
+显示file.log文件除最后10行外的内容：
+
+```bash
+head -n -10 file.log
+```
