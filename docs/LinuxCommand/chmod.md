@@ -85,7 +85,7 @@ chmod a-x log2012.log
 撤销原来所有的权限，然后使拥有者具有可读权限:
 
 ```bash
-chmod u=x log2012.log
+chmod u=r log2012.log
 ```
 
 将file.txt设为该文件拥有者和同一群组的用户可写入，其他人不可写入：
