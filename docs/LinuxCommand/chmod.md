@@ -93,18 +93,3 @@ chmod ug+w,o-w file.txt
 ```bash
 chmod -R a+r *
 ```
-
-此外chmod也可以用数字来表示权限，语法为`chmod abc file`，其中a,b,c各为一个数字，分别表示User,Group,Other的权限，r=4,w=2,x=1
-
-```text
-若要rwx属性则4+2+1=7
-若要rw-属性则4+2=6
-若要r-x属性则4+1=5
-```
-
-例如，以下两条命令的效果相同：
-
-```bash
-chmod 771 file
-chmod ug=rwx,o=x file
-```
