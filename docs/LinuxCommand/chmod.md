@@ -6,6 +6,8 @@ chmod [-cfvR] [--help] [--version] mode file
 
 ## 2. 基本功能
 
+Linux/Unix的文件调用权限分为三级: 文件拥有者、群组、其他。chmod修改文件的调用权限
+
 ## 3. 常用参数
 
 > 必要参数
@@ -62,12 +64,53 @@ s ：特殊权限
 
 ## 4. 注意事项
 
-`chmod ug+w,o-x log2012.log`: 文件属主（u） 增加写权限;与文件属主同组用户（g） 增加写权限;其他用户（o） 删除执行权限
-
-`chmod a-x log2012.log`:  删除所有用户的可执行权限
-
-`chmod u=x log2012.log`: 撤销原来所有的权限，然后使拥有者具有可读权限
-
-`chmod 751 file`: 给file的属主分配读、写、执行(7)的权限，给file的所在组分配读、执行(5)的权限，给其他用户分配执行(1)的权限
++表示在现有权限基础上增加权限，-表示现有权限基础上移除权限，=表示将权限设置成后面的值。
 
 ## 5. 常用形式
+
+将file.txt设为所有人可读：
+
+```bash
+chmod ugo+r file.txt
+# or
+chmod a+r file.txt
+```
+
+删除所有用户的可执行权限:
+
+```bash
+chmod a-x log2012.log
+```
+
+撤销原来所有的权限，然后使拥有者具有可读权限:
+
+```bash
+chmod u=r log2012.log
+```
+
+将file.txt设为该文件拥有者和同一群组的用户可写入，其他人不可写入：
+
+```bash
+chmod ug+w,o-w file.txt
+```
+
+将当前目录下的文件与目录设置为任何人可读取：
+
+```bash
+chmod -R a+r *
+```
+
+此外chmod也可以用数字来表示权限，语法为`chmod abc file`，其中a,b,c各为一个数字，分别表示User,Group,Other的权限，r=4,w=2,x=1
+
+```text
+若要rwx属性则4+2+1=7    (二进制为111)
+若要rw-属性则4+2=6      (二进制为110)
+若要r-x属性则4+1=5      (二进制为101)
+```
+
+例如，以下两条命令的效果相同：
+
+```bash
+chmod 771 file
+chmod ug=rwx,o=x file
+```
