@@ -7,7 +7,7 @@ pull_request_rules:
       comment:
         message: |
           Thanks for opening this pull request! 
-          Please check out the contributing guidelines in README.md.
+          Please check out the contributing guidelines in [README.md](https://github.com/BobAnkh/LinuxBeginner/blob/master/docs/README.md).
   - name: Assign author
     conditions:
       - "-closed"
