@@ -16,7 +16,7 @@
 
 ## 使用说明
 
-本项目本身是一个文档合集，可以直接查看`docs/`目录下的对应文件
+本项目本身是一个文档合集，可以直接查看`docs/`目录下的对应的markdown文件，计划后续将生成pdf并定期打包发布
 
 使用了[docsify](https://docsify.js.org/#/)构筑了Github Page，具体网址为：[LinuxBeginner](https://blog.bobankh.com/LinuxBeginner/)
 
