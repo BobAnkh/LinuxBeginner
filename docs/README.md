@@ -73,7 +73,7 @@
 
 如一次改动中与多个`<type>`相关，则优先使用`feat`与`fix`，其次使用`AngularJS Git Commit Message Conventions`中规定的剩余6个，最后则是针对特殊需要的余下3个
 
-`<scope>`中主要描述commit影响的范围，视具体改动情况而定，如可以填写所改动的文件（如有多个文件，则可以统一填写其所属模块或项目名）
+`<scope>`中主要描述commit影响的范围，通常是文件、路径、功能，视具体改动情况而定，如可以填写所改动的文件（如有多个文件，则可以统一填写其所属模块或项目名），或者填写所影响的功能
 
 `<subject>`中主要是本次commit目的的简短描述，要求以动词开头，使用第一人称现在时，并且首字母小写，结尾无需添加句号
 
@@ -98,7 +98,7 @@ feat(command): add a new linux command ls
 > 又例如，对于ls.md中发现书写错误的修改，commit信息可以写为：
 
 ```text
-docs(ls.md): fix a typo
+docs(ls): fix a typo
 
 - change `-` to `--`
 ```
