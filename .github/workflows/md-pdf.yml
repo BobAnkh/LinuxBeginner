@@ -1,13 +1,13 @@
-name: action-test
+name: md2pdf
 on:
   schedule:
-    - cron:  '20 20 * * *'
+    - cron:  '40 20 * * *'
 defaults:
   run:
     shell: bash
 jobs:
-  test:
-    name: test
+  md2pdf:
+    name: md2pdf
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
@@ -18,9 +18,9 @@ jobs:
           git config --global user.email 2066729323@qq.com
           git config --global user.name github_actions
           git add .
-          git commit -m "update" -a
+          git commit -m "ci(md2pdf): update pdfs" -a
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: 'md-pdf'
+          branch: 'master'
