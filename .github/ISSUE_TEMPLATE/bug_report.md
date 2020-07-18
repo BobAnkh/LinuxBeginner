@@ -33,10 +33,10 @@ If applicable, add screenshots to help explain your problem.
 ## Environment
 <!--Please provide the necessary environment information-->
 
- - Device: [e.g. iPhone6]
- - OS: [e.g. Ubuntu 18.04LTS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+- Device: [e.g. iPhone6]
+- OS: [e.g. Ubuntu 18.04LTS]
+- Browser [e.g. chrome, safari]
+- Version [e.g. 22]
 
 ## Additional context
 
