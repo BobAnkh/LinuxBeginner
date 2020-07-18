@@ -67,4 +67,3 @@ more -s file_1
 ```console
 more +5 file_1
 ```
-
