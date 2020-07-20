@@ -2,7 +2,7 @@
 name: Bug report
 about: Create a report to help us improve
 title: "[bug]"
-labels: ''
+labels: bug
 assignees: ''
 
 ---
@@ -31,7 +31,7 @@ A clear and concise description of what you expected to happen.
 If applicable, add screenshots to help explain your problem.
 
 ## Environment
-<!--Please provide the necessary environment information-->
+<!--- Please provide the necessary environment information -->
 
 - Device: [e.g. iPhone6]
 - OS: [e.g. Ubuntu 18.04LTS]

@@ -16,7 +16,7 @@ A clear and concise description of what the problem is. Ex. I'm always frustrate
 A clear and concise description of what you want to happen.
 
 ## Proposed technical implementation details (optional)
-
+<!--- If you don't have any idea, you can just left a blank section -->
 A clear and concise description of any solutions you've considered.
 
 ## Additional context
