@@ -43,13 +43,19 @@ for contributor in contributors:
     USER += 1
 head = head + tail
 
-contents = repo.get_contents("docs/README.md")
+contents = repo.get_contents("/README.md")
+contents_bkp = repo.get_contents("/docs/README.md")
 base = contents.content
 base = base.replace('\n', '')
 text = base64.b64decode(base).decode('utf-8')
 str = text.split(CONTRIB)
 end = str[1].split(CONTRIB_END)
-end[0] = head
-text = str[0] + CONTRIB + end[0] + CONTRIB_END + end[1]
-repo.update_file(contents.path, "docs(contrib): update contributors", text,
-                 contents.sha)
+if end[0] != head:
+    end[0] = head
+    text = str[0] + CONTRIB + end[0] + CONTRIB_END + end[1]
+    repo.update_file(contents.path, "docs(contrib): update contributors", text,
+                     contents.sha)
+    repo.update_file(contents_bkp.path, "docs(contrib): update contributors",
+                     text, contents_bkp.sha)
+else:
+    pass
