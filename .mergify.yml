@@ -7,7 +7,7 @@ pull_request_rules:
       comment:
         message: |
           Thanks for opening this pull request! 
-          Please check out the contributing guidelines in README.md.
+          Please check out the contributing guidelines in [README](https://github.com/BobAnkh/LinuxBeginner/blob/master/docs/README.md).
   - name: Assign author
     conditions:
       - "-closed"
@@ -36,7 +36,7 @@ pull_request_rules:
         message: |
           @{{author}}
           Wrong PR Title: {{title}}
-          Title should begin with `LinuxCommand:` or `LinuxTool:`
+          Please check [README](https://github.com/BobAnkh/LinuxBeginner/blob/master/docs/README.md) for more information.
   - name: branch name check comment
     conditions:
       - "status-failure=validate-branch-name"
@@ -47,14 +47,7 @@ pull_request_rules:
         message: |
           @{{author}}
           Wrong branch name: {{head}}
-          Please check details or README.md for more information.
-  - name: branch name check label
-    conditions:
-      - "status-failure=validate-branch-name"
-      - "#label=0"
-      - "-closed"
-      - "-merged"
-    actions:
+          Please check details and [README](https://github.com/BobAnkh/LinuxBeginner/blob/master/docs/README.md) for more information.
       label:
         add:
           - "invalid"
@@ -68,7 +61,18 @@ pull_request_rules:
         message: |
           @{{author}}
           Contribution Message Convention Tests failed with GitMagic.
-          Please check details or README.md for more information.
+          Please check details or [README](https://github.com/BobAnkh/LinuxBeginner/blob/master/docs/README.md) for more information.
+  - name: markdownlint check comment
+    conditions:
+      - "status-failure=markdownlint-cli-check"
+      - "-closed"
+      - "-merged"
+    actions:
+      comment:
+        message: |
+          @{{author}}
+          Markdown Files Check failed with markdownlint.
+          Please check details or [README](https://github.com/BobAnkh/LinuxBeginner/blob/master/docs/README.md) for more information.
   - name: conflict comment
     conditions:
       - "-closed"
@@ -86,6 +90,7 @@ pull_request_rules:
       - status-success=Title Validator
       - status-success=gitmagic/rules
       - status-success=validate-branch-name
+      - status-success=markdownlint-cli-check
       - "-closed"
       - "-draft"
       - "-conflict"
@@ -102,6 +107,7 @@ pull_request_rules:
       - status-success=Title Validator
       - status-success=gitmagic/rules
       - status-success=validate-branch-name
+      - status-success=markdownlint-cli-check
       - label!=invalid
       - "-closed"
       - "-draft"
@@ -110,7 +116,7 @@ pull_request_rules:
     actions:
       comment:
         message: |
-          This pull request has been approved by: @BobAnkh
+          This pull request has been approved by:
           {% for name in "approved-reviews-by" %}
           @{{name}}
           {% endfor %}
@@ -124,6 +130,7 @@ pull_request_rules:
       - status-success=Title Validator
       - status-success=gitmagic/rules
       - status-success=validate-branch-name
+      - status-success=markdownlint-cli-check
       - label!=invalid
       - "-closed"
       - "-draft"

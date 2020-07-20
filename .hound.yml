@@ -1,2 +1,4 @@
 flake8:
   enabled: true
+shellcheck:
+  enabled: true
