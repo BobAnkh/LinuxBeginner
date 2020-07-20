@@ -58,4 +58,12 @@ if end[0] != head:
     repo.update_file(contents_bkp.path, "docs(contrib): update contributors",
                      text, contents_bkp.sha)
 else:
-    pass
+    base_bkp = contents_bkp.content
+    base_bkp = base_bkp.replace('\n', '')
+    text_bkp = base64.b64decode(base_bkp).decode('utf-8')
+    if text != text_bkp:
+        repo.update_file(contents_bkp.path,
+                         "docs(README): synchronize README files", text,
+                         contents_bkp.sha)
+    else:
+        pass
