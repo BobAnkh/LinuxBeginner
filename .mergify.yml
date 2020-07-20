@@ -117,7 +117,7 @@ pull_request_rules:
       comment:
         message: |
           This pull request has been approved by:
-          {% for name in "approved-reviews-by" %}
+          {% for name in approved-reviews-by %}
           @{{name}}
           {% endfor %}
           Thank you @{{author}} for your contributions!
