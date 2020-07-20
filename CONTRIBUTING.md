@@ -84,7 +84,7 @@ docs(ls): fix a typo
 - 如果是对于文档内容的修改，对于本项目而言，则可以根据所属类别——Linux命令或Linux工具，分别以如下形式命名分支：`LinuxCommand/<number of command><command>`或`LinuxTool/<number of tool><tool>`，如：`LinuxCommand/01ls`或`LinuxTool/02htop`
 - 如果是其他情况，请务必先提出issue与维护者进行讨论
 
-请按照[template](.github/PULL_REQUEST_TEMPLATE.md)描述本次PR的相关内容，以便reviewer可以较为容易地判断和了解你的想法，该部分不可空缺。
+请按照[pull_request_template](.github/PULL_REQUEST_TEMPLATE.md)描述本次PR的相关内容，以便reviewer可以较为容易地判断和了解你的想法，该部分不可空缺。
 
 **如是对于文档内容变更的PR，则PR的标题应以`docs(LinuxCommand):`或以`docs(LinuxTool):`开头；开发新功能的PR，标题应以`feature(<Your-New-Feautre>):`开头；修复bug的PR，标题应以`fix(<Your-BugFix-Feature>):`开头**
 
