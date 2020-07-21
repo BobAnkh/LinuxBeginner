@@ -1,6 +1,6 @@
 # CONTRIBUTING
 
-非常高兴您愿意为本项目贡献自己的力量，欢迎随时提出issue或者提交pull request，请注意按照各自的template进行撰写，相关规范如下
+非常高兴您愿意为本项目贡献自己的力量，欢迎随时提出issue或者提交pull request，请注意按照各自的template进行撰写，我们采用了一系列自动化工具来检查，不符合规范的贡献可能会被拒绝，相关规范如下
 
 ## 关于Commit的规范
 
@@ -116,3 +116,19 @@ docs(ls): fix a typo
     2. 如何安装
     3. 如何使用（可包含基本参数和基本指令）
     4. 常见使用方式和注意事项
+
+## 关于各类型文件的要求
+
+对于各类型文件，均应先在本地进行相应测试通过后提交
+
+### Markdown
+
+采用markdownlint进行检查，具体配置可参考[.markdownlint.json](/.markdownlint.json)
+
+### Python
+
+采用flake8默认配置进行检查，并采用yapf默认配置进行格式化
+
+### Shell
+
+采用shellcheck默认配置进行检查
