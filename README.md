@@ -16,11 +16,11 @@
 
 ## 使用说明
 
-本项目本身是一个文档合集，可以直接查看`docs/`目录下的对应的markdown文件，计划后续将生成pdf并定期打包发布
+本项目本身是一个文档合集，使用了[docsify](https://docsify.js.org/#/)构筑了Github Page，具体网址为：[LinuxBeginner](https://blog.bobankh.com/LinuxBeginner/)
 
-使用了[docsify](https://docsify.js.org/#/)构筑了Github Page，具体网址为：[LinuxBeginner](https://blog.bobankh.com/LinuxBeginner/)
+`docs/`目录下存放了对应的markdown文件，计划后续将生成pdf并定期打包发布
 
-`scripts/`文件夹中包含的是与自动工作流程相关的一些python脚本
+`scripts/`文件夹中包含的是与自动工作流程相关的一些python脚本和bash脚本
 
 ## 维护者
 
@@ -28,11 +28,11 @@
 
 ## 如何贡献
 
-我们非常欢迎任何人为本项目贡献自己的力量，为这个仓库添加新的内容，只要它对于这个仓库是具有意义的
+我们非常欢迎任何人为本项目贡献自己的力量，为这个仓库添加新的内容，只要它对于这个仓库是具有意义的，并且是符合规范的
 
-欢迎随时提出issue或者提交pull request，但是它们需要按照各自的template进行填写，并符合[Contributing Guidelines](/CONTRIBUTING.md)中的规范
+欢迎随时提出issue或者提交pull request，但是它们需要按照各自的template进行填写，并符合[Contributing Guidelines](/CONTRIBUTING.md)中的规范以通过自动化工具的检查
 
-您可以优先考虑具有`help wanted`标签的issue
+可以优先考虑具有`help wanted`标签的issue
 
 同时请注意，参与本项目需要遵守[Code of Conduct](/CODE_OF_CONDUCT.md)
 
