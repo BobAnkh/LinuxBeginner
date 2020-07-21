@@ -36,6 +36,6 @@
 - [ ] Changes follow the **CONTRIBUTING** guidelines.
 - [ ] Update necessary documentation accordingly.
 - [ ] Lint and tests pass locally with the changes.
-- [ ] Check that there is no duplication with an assigned issue or an existing PR.
+- [ ] Check issues and pull requests first. You don't want to duplicate effort.
 
 ## Other information
