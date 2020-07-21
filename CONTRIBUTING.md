@@ -20,11 +20,13 @@
 
 对于任何项目而言，第一行即`<header>`部分是必须的，其后的`<body>`和`<footer>`则可依据实际情况予以省略
 
+这三个部分之间需要使用一个空行进行分隔
+
 同时，需要注意，对于commit信息的`<header>`部分，应当尽量限制在50个字符及以内，对于其`<body>`部分，每一行应尽量限制在72个字符及以内
 
 ### 关于`<header>`部分
 
-`<header>`部分仅有一行，三个字段`<type>`，`<scope>`和`<subject>`的要求如下：
+`<header>`部分有且仅允许有一行，三个字段`<type>`，`<scope>`和`<subject>`的要求如下：
 
 `<type>`主要用于说明commit的类别，在`AngularJS Git Commit Message Conventions`中，只允许使用以下8个标识：
 
