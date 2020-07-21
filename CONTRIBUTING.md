@@ -22,6 +22,8 @@
 
 同时，需要注意，对于commit信息的`<header>`部分，应当尽量限制在50个字符及以内，对于其`<body>`部分，每一行应尽量限制在72个字符及以内
 
+### 关于`<header>`部分
+
 `<header>`部分仅有一行，三个字段`<type>`，`<scope>`和`<subject>`的要求如下：
 
 `<type>`主要用于说明commit的类别，在`AngularJS Git Commit Message Conventions`中，只允许使用以下8个标识：
@@ -47,9 +49,23 @@
 
 `<subject>`中主要是本次commit目的的简短描述，要求以动词开头，使用第一人称现在时，并且首字母小写，结尾不应添加句号
 
-`<body>`部分是对于本次commit的详细描述，建议使用`-`符号列写成多行，同样要求使用第一人称现在时，并且应当说明代码变动的动机以及与之前的差异对比
+### 关于`<body>`部分
 
-`<footer>`部分只适用于两种情况，若无此两种情况则可略去：其一是不兼容变动——即当前代码与上一版本不兼容，则需以`BREAKING CHANGE`开头描述变动本身、变动理由以及迁移方法；其二是与issue相关，如本次commit是针对某个issue做出的提交，可以在此部分以`Closes #123, #456`这样的形式关闭一个或多个issue
+`<body>`部分就是正文部分，是对于本次commit的详细描述，同样要求使用第一人称现在时
+
+该部分在`<header>`足以概括本commit内容时可以略去
+
+建议使用`-`符号列写成多行，并且应当说明说明本次提交解决了什么问题，如何解决的以及是否引入了其他修改（如必要的文档更新等）
+
+### 关于`<footer>`部分
+
+`<footer>`部分只适用于两种情况，若无此两种情况则可略去：
+
+其一是不兼容变动，即当前代码与上一版本不兼容，则需以`BREAKING CHANGE`开头描述变动本身、变动理由以及迁移方法
+
+其二是与issue相关，如本次commit是针对某个issue做出的提交，可以在此部分以`Closes #123, #456`这样的形式关闭一个或多个issue
+
+### Commit信息示例
 
 以下给出一些commit信息的示例：
 
@@ -71,24 +87,32 @@ feat(command): add a new linux command ls
 docs(ls): fix a typo
 
 - change `-` to `--`
+
+Closes #4
 ```
 
 ## 关于Pull Request的规范
 
-你需要在fork的仓库的一个具有与你所提交的内容相关名称的单独的branch提起Pull Request（PR）。从master分支提起的PR将不会被接受。这是因为你从单独分支提起PR时，仍可以通过向该分支进行commit和push来修改内容、持续更新
+### 关于Pull Request的分支规范
 
-对于本项目目前而言，PR主要可以使用的分支命名规范如下：
+你需要在fork的仓库的一个具有与你所提交的内容相关名称的单独的branch提起Pull Request（PR）。从master分支提起的Pull Request将不会被接受。这是因为你从单独分支提起Pull Request时，仍可以通过向该分支进行commit和push来修改内容、持续更新
+
+对于本项目目前而言，Pull Request主要可以使用的分支命名规范如下：
 
 - 如果是开发新功能，分支名称需以`feature/`开头，后接具体的功能名称，如`feature/md2pdf`，若是基于某现有功能的优化，则可为`feature/optimize_md2pdf`
 - 如果是对于功能的bug的修复，则分支名称需以`fix/`开头，后接具体修复的功能名称，如`fix/yapf`
 - 如果是对于文档内容的修改，对于本项目而言，则可以根据所属类别——Linux命令或Linux工具，分别以如下形式命名分支：`LinuxCommand/<number of command><command>`或`LinuxTool/<number of tool><tool>`，如：`LinuxCommand/01ls`或`LinuxTool/02htop`
 - 如果是其他情况，请务必先提出issue与维护者进行讨论
 
-请按照[pull_request_template](.github/PULL_REQUEST_TEMPLATE.md)描述本次PR的相关内容，以便reviewer可以较为容易地判断和了解你的想法，该部分不可空缺。
+### 关于Pull Request的描述信息规范
+
+请按照[pull_request_template](.github/PULL_REQUEST_TEMPLATE.md)描述本次Pull Request的相关内容，以便reviewer可以较为容易地判断和了解你的想法，该部分不可空缺。
 
 **如是对于文档内容变更的PR，则PR的标题应以`docs(LinuxCommand):`或以`docs(LinuxTool):`开头；开发新功能的PR，标题应以`feature(<Your-New-Feautre>):`开头；修复bug的PR，标题应以`fix(<Your-BugFix-Feature>):`开头**
 
-在PR的信息框内，需要描述本变更的意义（如解决了什么问题、优化完善了什么内容等），详细描述这个PR中所实现的主要内容或功能，以及产生的变更，并介绍采用的技术栈（如果有）。建议配合使用`Tasklist`形式，以更加直观地组织PR描述。请注意，**任何`draft pr`必须要在描述中包含`Tasklist`**，并随着你的提交和进展更新进度。如果本PR解决了某一个issue，也请在描述中以正确的形式进行链接。此外，也需要检查未与已经assign的issue或已经发起的PR重复。并且，若有对于html或css文件的修改，需要在PR描述中附上相应的截图
+在Pull Request的信息框内，需要描述本变更的意义（如解决了什么问题、优化完善了什么内容等），详细描述这个Pull Request中所实现的主要内容或功能，并介绍实现所采用的技术栈（如果有），以及产生的其他必要变更（如必要的文档更新）。
+
+建议配合使用`Tasklist`形式，以更加直观地组织PR描述。请注意，**任何`draft pull request`必须要在描述中包含`Tasklist`**，并随着你的提交和进展更新进度。如果本Pull Request解决了某一个issue，也请在描述中以正确的形式进行链接。此外，也需要检查未与已有的issue或Pull Request重复。并且，若有对于html或css文件的修改，需要在Pull Request描述中附上相应的截图
 
 > Tasklist形式如下:
 >
@@ -96,13 +120,13 @@ docs(ls): fix a typo
 >
 > [ ] This is what you plan to do and how you plan to achieve it.
 
-同时，基于本项目的情况，建议在计划添加某一新命令或工具时，或者开发新的功能时，建立新的分支和相关文件后，以`draft pull request`的形式进行占位。对于新的命令或工具，需要以此选择序号，并应当使用已用序号后续紧邻的序号，并且不能够使用未被merge的PR所占用的序号。如果需要进行功能方面的更改，建议先提出**issue**或发起**draft pr**进行讨论。
+同时，基于本项目的情况，建议在计划添加某一新命令或工具时，或者开发新的功能时，建立新的分支和相关文件后，以`draft pull request`的形式进行占位。对于新的命令或工具，需要以此选择序号，并应当使用已用序号后续紧邻的序号，并且不能够使用未被merge的Pull Request所占用的序号。如果需要进行功能方面的更改，建议先提出**issue**或发起**draft pull request**进行讨论。
 
-本仓库目前设置了一些自动化检查功能，在提交PR后可稍作等待，可以根据comment的内容和check的details来进行相应处理
+本仓库目前设置了一些自动化检查功能，在提交Pull Request后可稍作等待，可以根据comment的内容和check的details来进行相应处理
 
 ## 关于文档内容变更的注意事项
 
-> 目前主要以Linux命令和Linux工具为主要的文档工作重心，如果认为有其他方面也是可以添加的，欢迎提出issue或以类似的文件形式组织后PR
+> 目前主要以Linux命令和Linux工具为主要的文档工作重心，如果认为有其他方面也是可以添加的，欢迎提出issue或以类似的文件形式组织后发起Pull Request
 
 - 对于Linux命令而言，目前计划涉及内容如下：
     1. 命令格式
@@ -119,7 +143,7 @@ docs(ls): fix a typo
 
 ## 关于各类型文件的要求
 
-对于各类型文件，均应先在本地进行相应测试通过后提交
+对于各类型文件，均应根据要求先在本地进行相应测试检查，并在通过后提交
 
 ### Markdown
 
