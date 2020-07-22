@@ -29,4 +29,7 @@ jobs:
     - name: Add contributors
       env: 
         ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
-      run: python contributor.py "$ACCESS_TOKEN"
+        REPO_NAME: 'BobAnkh/LinuxBeginner'
+        CONTRIBUTOR: '### 贡献者'
+        COLUMN_PER_ROW: '6'
+      run: python contributor.py "$ACCESS_TOKEN" "$REPO_NAME" "$CONTRIBUTOR" "$COLUMN_PER_ROW"
