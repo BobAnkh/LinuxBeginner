@@ -25,8 +25,10 @@ labelPRBasedOnFilePath:
     - /docs/LinuxTool/**/*
 
   chore:
-    - /.github/**/*
     - /scripts/**/*
+
+  'Type: CI/CD':
+    - /.github/**/*.yml
 
 ##### Greetings ########################################################################################################
 # Comment to be posted to welcome users when they open their first PR
