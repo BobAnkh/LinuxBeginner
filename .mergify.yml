@@ -7,7 +7,7 @@ pull_request_rules:
       comment:
         message: |
           Thanks for opening this pull request! 
-          Please check out the contributing guidelines in [README](https://github.com/BobAnkh/LinuxBeginner/blob/master/docs/README.md).
+          Please check out the [Contributing Guidelines](https://github.com/BobAnkh/LinuxBeginner/blob/master/CONTRIBUTING.md).
   - name: Assign author
     conditions:
       - "-closed"
@@ -36,18 +36,19 @@ pull_request_rules:
         message: |
           @{{author}}
           Wrong PR Title: {{title}}
-          Please check [README](https://github.com/BobAnkh/LinuxBeginner/blob/master/docs/README.md) for more information.
+          Please check [Contributing Guidelines](https://github.com/BobAnkh/LinuxBeginner/blob/master/CONTRIBUTING.md) for more information.
   - name: branch name check comment
     conditions:
       - "status-failure=validate-branch-name"
       - "-closed"
       - "-merged"
     actions:
-      comment:
+      close:
         message: |
           @{{author}}
           Wrong branch name: {{head}}
-          Please check details and [README](https://github.com/BobAnkh/LinuxBeginner/blob/master/docs/README.md) for more information.
+          Please check details and [Contributing Guidelines](https://github.com/BobAnkh/LinuxBeginner/blob/master/CONTRIBUTING.md) for more information.
+          This Pull Request will be closed.
       label:
         add:
           - "invalid"
@@ -61,7 +62,7 @@ pull_request_rules:
         message: |
           @{{author}}
           Contribution Message Convention Tests failed with GitMagic.
-          Please check details or [README](https://github.com/BobAnkh/LinuxBeginner/blob/master/docs/README.md) for more information.
+          Please check details and [Contributing Guidelines](https://github.com/BobAnkh/LinuxBeginner/blob/master/CONTRIBUTING.md) for more information.
   - name: markdownlint check comment
     conditions:
       - "status-failure=markdownlint-cli-check"
@@ -72,7 +73,7 @@ pull_request_rules:
         message: |
           @{{author}}
           Markdown Files Check failed with markdownlint.
-          Please check details or [README](https://github.com/BobAnkh/LinuxBeginner/blob/master/docs/README.md) for more information.
+          Please check details or [Contributing Guidelines](https://github.com/BobAnkh/LinuxBeginner/blob/master/CONTRIBUTING.md) for more information.
   - name: conflict comment
     conditions:
       - "-closed"
@@ -117,9 +118,7 @@ pull_request_rules:
       comment:
         message: |
           This pull request has been approved by:
-          {% for name in approved_reviews_by %}
-          @{{name}}
-          {% endfor %}
+          @BobAnkh
           Thank you @{{author}} for your contributions!
       merge:
         method: merge
