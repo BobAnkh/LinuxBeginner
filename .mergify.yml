@@ -2,6 +2,7 @@ pull_request_rules:
   - name: Automatic welcome on new pr
     conditions:
       - author!=BobAnkh
+      - author!=dependabot[bot]
       - "-closed"
     actions:
       comment:
@@ -55,6 +56,7 @@ pull_request_rules:
   - name: message check comment
     conditions:
       - "status-failure=gitmagic/rules"
+      - author!=dependabot[bot]
       - "-closed"
       - "-merged"
     actions:
@@ -104,6 +106,7 @@ pull_request_rules:
   - name: Automatic merge on approval
     conditions:
       - author!=BobAnkh
+      - author!=dependabot[bot]
       - "#approved-reviews-by>=1"
       - status-success=Title Validator
       - status-success=gitmagic/rules
@@ -130,6 +133,21 @@ pull_request_rules:
       - status-success=gitmagic/rules
       - status-success=validate-branch-name
       - status-success=markdownlint-cli-check
+      - label!=invalid
+      - "-closed"
+      - "-draft"
+      - "-conflict"
+      - "-merged"
+    actions:
+      merge:
+        method: merge
+        strict: smart+fasttrack
+  - name: Automatic merge dependabot[bot]
+    conditions:
+      - author=dependabot[bot]
+      - "#approved-reviews-by>=1"
+      - "-status-failure=Title Validator"
+      - "-status-failure=validate-branch-name"
       - label!=invalid
       - "-closed"
       - "-draft"
