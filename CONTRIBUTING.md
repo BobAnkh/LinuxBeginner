@@ -105,7 +105,7 @@ Closes #4
 
 - 如果是开发新功能，分支名称需以`feature/`开头，后接具体的功能名称，如`feature/md2pdf`，若是基于某现有功能的优化，则可为`feature/optimize_md2pdf`
 - 如果是对于功能的bug的修复，则分支名称需以`fix/`开头，后接具体修复的功能名称，如`fix/yapf`
-- 如果是对于文档内容的修改，对于本项目而言，则可以根据所属类别——Linux命令或Linux工具，分别以如下形式命名分支：`LinuxCommand/<number of command><command>`或`LinuxTool/<number of tool><tool>`，如：`LinuxCommand/01ls`或`LinuxTool/02htop`
+- 如果是对于文档内容的修改，则分支名称需以`docs/`开头，对于本项目而言，也可以根据所属类别——Linux命令或Linux工具，分别以如下形式命名分支：`LinuxCommand/<number of command><command>`或`LinuxTool/<number of tool><tool>`，如：`LinuxCommand/01ls`或`LinuxTool/02htop`
 - 如果是其他情况，请务必先提出issue与维护者进行讨论
 
 ### 关于Pull Request的描述信息规范
