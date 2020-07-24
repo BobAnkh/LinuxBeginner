@@ -124,7 +124,9 @@ Closes #4
 >
 > [ ] This is what you plan to do and how you plan to achieve it.
 
-同时，基于本项目的情况，建议在计划添加某一新命令或工具时，或者开发新的功能时，建立新的分支和相关文件后，以`draft pull request`的形式进行占位。对于新的命令或工具，需要以此选择序号，并应当使用已用序号后续紧邻的序号，并且不能够使用未被merge的Pull Request所占用的序号。如果需要进行功能方面的更改，建议先提出**issue**或发起**draft pull request**进行讨论。
+同时，基于本项目的情况，建议在计划添加某一新命令或工具时，或者开发新的功能时，建立新的分支和相关文件后，以`draft pull request`的形式进行占位。对于新的命令或工具，需要以此选择序号，并应当使用已用序号后续紧邻的序号，并且不能够使用未被merge的Pull Request所占用的序号。如果需要进行功能方面的更改，建议先提出**issue**或发起**draft pull request**进行讨论
+
+在每次开发或修改前，需要进行分支的更新。使用`rebase`方法或`pull --rebase`方法来进行Pull Request的更新，以保持commit记录的干净整洁
 
 本仓库目前设置了一些自动化检查功能，在提交Pull Request后可稍作等待，可以根据comment的内容和check的details来进行相应处理
 
