@@ -1,0 +1,5 @@
+enhancement: ['feature/*', 'feat/*']
+bug: fix/*
+chore: chore/*
+dependencies: dependabot/*
+documentation: ['docs/*', 'LinuxCommand/*', 'LinuxTool/*']
