@@ -29,6 +29,8 @@ labelPRBasedOnFilePath:
 
   'Type: CI/CD':
     - /.github/**/*.yml
+    - /*.yml
+    - /.*json
 
 ##### Greetings ########################################################################################################
 # Comment to be posted to welcome users when they open their first PR
