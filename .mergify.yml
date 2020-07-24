@@ -27,6 +27,41 @@ pull_request_rules:
       request_reviews:
         users:
           - BobAnkh
+  - name: Label enhancement
+    conditions:
+      - head~=^feature\/[a-zA-Z0-9-_\/]+$|^feat\/[a-zA-Z0-9-_\/]+$
+    actions:
+      label:
+        add:
+          - enhancement
+  - name: Label bug
+    conditions:
+      - head~=^fix\/[a-zA-Z0-9-_\/]+$
+    actions:
+      label:
+        add:
+          - bug
+  - name: Label documentation
+    conditions:
+      - head~=^docs\/[a-zA-Z0-9-_\/]+$|^LinuxCommand\/[a-zA-Z0-9-_\/]+$|^LinuxTool\/[a-zA-Z0-9-_\/]+$
+    actions:
+      label:
+        add:
+          - documentation
+  - name: Label chore
+    conditions:
+      - head~=^chore\/[a-zA-Z0-9-_\/]+$
+    actions:
+      label:
+        add:
+          - chore
+  - name: Label dependencies
+    conditions:
+      - head~=^dependabot\/[a-zA-Z0-9-_\/]+$
+    actions:
+      label:
+        add:
+          - dependencies
   - name: Title Validator comment
     conditions:
       - "status-failure=Title Validator"
