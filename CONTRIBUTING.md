@@ -159,6 +159,8 @@ Closes #4
 
 采用flake8默认配置进行检查，并采用yapf默认配置进行格式化
 
+注释风格采用Google风格，推荐采用vscode的`Python Docstring Generator`插件辅助生成
+
 ### Shell
 
 采用shellcheck默认配置进行检查
