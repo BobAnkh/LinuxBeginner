@@ -9,7 +9,7 @@ jobs:
     - name: validate-the-name-of-the-branch
       uses: deepakputhraya/action-branch-name@master
       with:
-        regex: '([a-zA-Z])+\/([a-zA-Z0-9-_\/])+$' # Regex the branch should match. This example enforces grouping
+        regex: '([a-zA-Z])+\/([a-zA-Z0-9-_\/])+' # Regex the branch should match. This example enforces grouping
         allowed_prefixes: 'feat/,fix/,docs/,refactor/,feature/,style/,test/,chore/,revert/,build/,ci/,perf/,revert/,LinuxCommand/,LinuxTool/,dependabot/' # All branches should start with the given prefix
         ignore: master,develop # Ignore exactly matching branch names from convention
         min_length: 2 # Min length of the branch name
