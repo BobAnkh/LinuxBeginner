@@ -75,7 +75,7 @@ pull_request_rules:
           Please check [Contributing Guidelines](https://github.com/BobAnkh/LinuxBeginner/blob/master/CONTRIBUTING.md) for more information.
   - name: branch name check comment
     conditions:
-      - "status-failure=validate-branch-name"
+      - "-head~=^(master|develop|((dependabot|chore|docs|LinuxCommand|LinuxTool|feature|feat|fix|refactor|style|test|build|release)\/[a-zA-Z0-9-_\/]{1,64}))$"
       - "-closed"
       - "-merged"
     actions:
@@ -127,7 +127,6 @@ pull_request_rules:
     conditions:
       - status-success=Title Validator
       - status-success=gitmagic/rules
-      - status-success=validate-branch-name
       - status-success=markdownlint-cli-check
       - "-closed"
       - "-draft"
@@ -145,7 +144,6 @@ pull_request_rules:
       - "#approved-reviews-by>=1"
       - status-success=Title Validator
       - status-success=gitmagic/rules
-      - status-success=validate-branch-name
       - status-success=markdownlint-cli-check
       - label!=invalid
       - "-closed"
@@ -169,7 +167,6 @@ pull_request_rules:
       - author=BobAnkh
       - status-success=Title Validator
       - status-success=gitmagic/rules
-      - status-success=validate-branch-name
       - status-success=markdownlint-cli-check
       - label!=invalid
       - "-closed"
@@ -186,7 +183,6 @@ pull_request_rules:
       - author=dependabot[bot]
       - "#approved-reviews-by>=1"
       - "-status-failure=Title Validator"
-      - "-status-failure=validate-branch-name"
       - label!=invalid
       - "-closed"
       - "-draft"
@@ -196,3 +192,4 @@ pull_request_rules:
       merge:
         method: merge
         strict: smart+fasttrack
+        strict_method: rebase
