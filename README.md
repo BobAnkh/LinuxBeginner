@@ -42,28 +42,28 @@
 <tr>
     <td align="center">
         <a href=https://github.com/BobAnkh>
-            <img src=https://avatars2.githubusercontent.com/u/44333669?v=4 width="100;" alt=BobAnkh/>
+            <img src=https://avatars2.githubusercontent.com/u/44333669?v=4 width="100;" style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;" alt=BobAnkh/>
             <br />
             <sub style="font-size:14px"><b>BobAnkh</b></sub>
         </a>
     </td>
     <td align="center">
         <a href=https://github.com/jwb528>
-            <img src=https://avatars0.githubusercontent.com/u/53799927?v=4 width="100;" alt=jwwwb/>
+            <img src=https://avatars0.githubusercontent.com/u/53799927?v=4 width="100;" style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;" alt=jwwwb/>
             <br />
             <sub style="font-size:14px"><b>jwwwb</b></sub>
         </a>
     </td>
     <td align="center">
         <a href=https://github.com/Kelly510>
-            <img src=https://avatars0.githubusercontent.com/u/49122590?v=4 width="100;" alt=Kelly510/>
+            <img src=https://avatars0.githubusercontent.com/u/49122590?v=4 width="100;" style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;" alt=Kelly510/>
             <br />
             <sub style="font-size:14px"><b>Kelly510</b></sub>
         </a>
     </td>
     <td align="center">
         <a href=https://github.com/Chengtian0730>
-            <img src=https://avatars0.githubusercontent.com/u/68174658?v=4 width="100;" alt=Chengtian0730/>
+            <img src=https://avatars0.githubusercontent.com/u/68174658?v=4 width="100;" style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;" alt=Chengtian0730/>
             <br />
             <sub style="font-size:14px"><b>Chengtian0730</b></sub>
         </a>
