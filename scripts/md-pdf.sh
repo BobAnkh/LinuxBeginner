@@ -10,7 +10,7 @@ PDF_PATH=$GITHUB_WORKSPACE/pdfs
 trave_conv() {
     for file in $(ls "$DOC_PATH"/"$1"); do
         if [ -f "$DOC_PATH"/"$1"/"$file" ]; then
-            if [[ "$file" =~ .md ]]; then
+            if [[ "$file" =~ .md$ ]]; then
                 if [ ! -d "$PDF_PATH"/"$1" ]; then
                     mkdir -p "$PDF_PATH"/"$1"
                 fi
