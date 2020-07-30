@@ -6,7 +6,6 @@ on:
 #      branches:
 #        - master
 
-
 jobs:
   add-contributors:
     runs-on: ubuntu-latest
@@ -23,3 +22,31 @@ jobs:
         PATH: '/README.md'
         COMMIT_MESSAGE: 'docs(README): update contributors'
         AVATAR_SHAPE: 'round'
+  sync:
+    needs: add-contributors
+    defaults:
+      run:
+        shell: bash
+        working-directory: scripts
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.x
+      uses: actions/setup-python@v2
+      with:
+        # Python 版本的语义版本范围矩阵或准确的版本
+        python-version: '3.x' 
+        # 可选 - x64 或 x86 架构，默认为 x64
+        architecture: 'x64' 
+    # 您可以打印当前 Python 版本以测试矩阵
+    - name: Display Python version
+      run: python -c "import sys; print(sys.version)"
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip setuptools wheel
+        pip install -r requirements.txt
+    - name: sync file
+      env: 
+        ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        REPO_NAME: 'BobAnkh/LinuxBeginner'
+      run: python sync.py "$ACCESS_TOKEN" "REPO_NAME"
