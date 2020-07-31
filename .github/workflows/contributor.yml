@@ -49,4 +49,4 @@ jobs:
       env: 
         ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
         REPO_NAME: 'BobAnkh/LinuxBeginner'
-      run: python sync.py "$ACCESS_TOKEN" "REPO_NAME"
+      run: python sync.py "$ACCESS_TOKEN" "$REPO_NAME"
