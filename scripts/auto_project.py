@@ -1,6 +1,19 @@
-from github import Github
-import sys
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+'''
+Author: BobAnkh
+Github: https://github.com/BobAnkh
+Date: 2020-07-25 10:50:35
+LastEditors: BobAnkh
+LastEditTime: 2020-08-02 22:36:19
+FilePath: /LinuxBeginner/scripts/auto_project.py
+Description: Script to add new pull request to project
+Copyright 2020 BobAnkh
+'''
 import re
+import sys
+
+from github import Github
 
 ACCESS_TOKEN = ''
 REPO_NAME = 'BobAnkh/LinuxBeginner'

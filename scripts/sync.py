@@ -1,6 +1,19 @@
-from github import Github
-import sys
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+'''
+Author: BobAnkh
+Github: https://github.com/BobAnkh
+Date: 2020-07-25 10:50:35
+LastEditors: BobAnkh
+LastEditTime: 2020-08-02 22:35:53
+FilePath: /LinuxBeginner/scripts/sync.py
+Description: Script to sync README
+Copyright 2020 BobAnkh
+'''
 import base64
+import sys
+
+from github import Github
 
 ACCESS_TOKEN = ''
 REPO_NAME = ''
