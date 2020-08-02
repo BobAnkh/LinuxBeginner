@@ -4,7 +4,9 @@
 
 我们采用了一系列自动化工具来检查，不符合规范的贡献可能会被拒绝，相关规范如下
 
-## 关于Commit的规范
+## 风格指南
+
+### Commit Message的规范
 
 每个commit应当包含相对独立的内容(即不允许将多类修改大杂烩在一个commit中提交)，同时需要在message信息中体现出具体更改
 
@@ -28,7 +30,7 @@
 
 这会使得commit信息在Github或者其他各种git工具上更容易阅读
 
-### 关于`<header>`部分
+#### 关于`<header>`部分
 
 `<header>`部分有且仅允许有一行，三个字段`<type>`，`<scope>`和`<subject>`的要求如下：
 
@@ -55,7 +57,7 @@
 
 `<subject>`中主要是本次commit目的的简短描述，要求以动词开头，使用第一人称现在时，并且首字母小写，结尾不应添加句号
 
-### 关于`<body>`部分
+#### 关于`<body>`部分
 
 `<body>`部分就是正文部分，是对于本次commit的详细描述，同样要求使用第一人称现在时
 
@@ -63,7 +65,7 @@
 
 建议使用`-`符号以无序列表的形式呈现，并且应当说明本次提交解决了什么问题、如何解决的以及是否引入了其他修改(如必要的文档更新等)
 
-### 关于`<footer>`部分
+#### 关于`<footer>`部分
 
 `<footer>`部分只适用于两种情况，若无此两种情况则可略去：
 
@@ -71,7 +73,7 @@
 
 其二是与issue相关，如本次commit是针对某个issue做出的提交，可以在此部分以`Closes #123, #456`这样的形式关闭一个或多个issue
 
-### Commit信息示例
+#### Commit Message示例
 
 以下给出一些commit信息的示例：
 
@@ -109,9 +111,9 @@ docs(ls.md): fix a typo
 Closes #456
 ```
 
-## 关于Pull Request的规范
+### 关于Pull Request的规范
 
-### 关于Pull Request的分支规范
+#### 分支规范
 
 你需要在fork的仓库的一个具有与你所提交的内容相关名称的单独的branch提起Pull Request(PR)。从master分支提起的Pull Request将不会被接受。这是因为你从单独分支提起Pull Request时，仍可以通过向该分支进行commit和push来修改内容、持续更新
 
@@ -122,7 +124,7 @@ Closes #456
 - 如果只是纯粹对于文档内容的修改，则分支名称需以`docs/`开头，后接文档修改涉及的范围，如`docs/usage`是变更了使用方法的相关文档。对于本项目而言，也可以根据所属类别——Linux命令或Linux工具，分别以如下形式命名分支：`LinuxCommand/<number of command><command>`或`LinuxTool/<number of tool><tool>`，如：`LinuxCommand/01ls`或`LinuxTool/02htop`
 - 如果是其他情况，请务必先提出issue与维护者进行讨论
 
-### 关于Pull Request的描述信息规范
+#### Pull Request的描述信息规范
 
 请按照[pull_request_template](.github/PULL_REQUEST_TEMPLATE.md)描述本次Pull Request的相关内容，以便reviewer可以较为容易地判断和了解你的想法，该部分不可空缺
 
@@ -148,7 +150,7 @@ Closes #456
 
 本仓库目前设置了一些自动化检查工具，在提交Pull Request后可稍作等待，可以根据comment的内容和check tools的details来进行相应处理
 
-## 关于文档内容变更的注意事项
+### 关于文档内容变更的注意事项
 
 > 目前主要以Linux命令和Linux工具为主要的文档工作重心，如果认为有其他方面也是可以添加的，欢迎提出issue或以类似的文件形式组织后发起Pull Request
 
@@ -165,20 +167,20 @@ Closes #456
     3. 如何使用(可包含基本参数和基本指令)
     4. 常见使用方式和注意事项
 
-## 关于各类型文件的要求
+### 语言风格
 
 对于各类型文件，均应根据要求先在本地进行相应测试检查，并在通过后提交
 
-### Markdown
+#### Markdown
 
 采用markdownlint进行检查，具体配置可参考[.markdownlint.json](/.markdownlint.json)
 
-### Python
+#### Python
 
 采用flake8默认配置进行检查，并采用yapf默认配置进行格式化
 
 注释风格采用Google风格，推荐采用vscode的`Python Docstring Generator`插件辅助生成
 
-### Shell
+#### Shell
 
 采用shellcheck默认配置进行检查
