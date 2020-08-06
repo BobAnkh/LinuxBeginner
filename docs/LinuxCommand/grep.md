@@ -14,7 +14,7 @@ grep命令用来在指定文件中搜寻与待匹配内容匹配的行
 
 -V, --version  显示版本信息并离开
 
--E, --extended-regexp  将输入的待匹配内容作为扩展正则表达式理解 
+-E, --extended-regexp  将输入的待匹配内容作为扩展正则表达式理解
 
 -F, --fixed-strings  将输入的待匹配内容作为字符串而不是正则表达式理解
 
@@ -82,7 +82,7 @@ grep命令用来在指定文件中搜寻与待匹配内容匹配的行
 
 -D ACTION, --devices=ACTION  接受来自设备，FIFO和socket的文本作为搜索对象,ACTION是用于从以上来源中获取文本的指令（如read）
 
--d ACTION, --directories=ACTION  接受来自目录的文本作为搜索对象,ACTION是用于从目录中获取文本的指令（如read） 
+-d ACTION, --directories=ACTION  接受来自目录的文本作为搜索对象,ACTION是用于从目录中获取文本的指令（如read）
 
 --exclude=GLOB  跳过对任何文件名与GLOB匹配的文件的搜索，GLOB是通配符形式
 
