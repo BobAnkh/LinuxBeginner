@@ -1,0 +1,31 @@
+name: Format with yapf
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  yapf-formater:
+    defaults:
+      run:
+        shell: bash
+        working-directory: scripts
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.x
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+        architecture: 'x64'
+    - name: Display Python version
+      run: python -c "import sys; print(sys.version)"
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip setuptools wheel
+        pip install -r requirements.txt
+    - name: yapf formatter
+      env:
+        ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        REPO_NAME: BobAnkh/LinuxBeginner
+        WORKING_PATH: scripts/
+      run: python yapf_formatter.py "$ACCESS_TOKEN" "$REPO_NAME" "$WORKING_PATH"
