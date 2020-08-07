@@ -68,6 +68,13 @@
             <sub style="font-size:14px"><b>Chengtian0730</b></sub>
         </a>
     </td>
+    <td align="center">
+        <a href=https://github.com/nagi2330>
+            <img src=https://avatars0.githubusercontent.com/u/63051453?v=4 width="100;" style="border-radius:50%;align-items:center;justify-content:center;overflow:hidden;" alt=Nagi/>
+            <br />
+            <sub style="font-size:14px"><b>Nagi</b></sub>
+        </a>
+    </td>
 </tr>
 </table>
 
