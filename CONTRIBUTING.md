@@ -128,7 +128,7 @@ Closes #456
 
 请按照[pull_request_template](.github/PULL_REQUEST_TEMPLATE.md)描述本次Pull Request的相关内容，以便reviewer可以较为容易地判断和了解你的想法，该部分不可空缺
 
-**如是开发新功能的PR，则PR的标题应以`feature(<Your-New-Feature>):`开头；修复bug的PR，标题应以`fix(<Your-BugFix-Feature>):`开头；对于文档内容变更的PR，标题应以`docs(<Your-Documentation-change-scope>)`开头，而对于本项目而言，可采用`docs(LinuxCommand):`或以`docs(LinuxTool):`开头**
+如是开发新功能的PR，则PR的标题应以`feature(<Your-New-Feature>):`开头；修复bug的PR，标题应以`fix(<Your-BugFix-Feature>):`开头；对于文档内容变更的PR，标题应以`docs(<Your-Documentation-change-scope>)`开头，而对于本项目而言，可采用`docs(LinuxCommand):`或以`docs(LinuxTool):`开头
 
 在Pull Request的描述信息框内，需要描述本变更的意义(如解决了什么问题、优化完善了什么内容等)，详细描述这个Pull Request中所实现的主要内容或功能，并介绍实现所采用的技术栈，以及产生的其他必要变更(如必要的文档更新)
 
