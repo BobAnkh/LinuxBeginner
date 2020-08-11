@@ -1,8 +1,9 @@
 # Linux Beginner
 
-![license](https://img.shields.io/github/license/BobAnkh/LinuxBeginner?logo=apache)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/d0816da9c60d4e008a7958d694d2ef2d)](https://www.codacy.com/manual/bobankhshen/LinuxBeginner?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=BobAnkh/LinuxBeginner&amp;utm_campaign=Badge_Grade)
 ![github-pages](https://img.shields.io/github/deployments/BobAnkh/LinuxBeginner/github-pages?color=blue&logo=github)
 ![last-commit](https://img.shields.io/github/last-commit/BobAnkh/LinuxBeginner?logo=git&logoColor=white)
+![license](https://img.shields.io/github/license/BobAnkh/LinuxBeginner?logo=apache)
 
 本项目主要内容是为Linux初学者所整理的一些常用命令和常用工具的文档
 
