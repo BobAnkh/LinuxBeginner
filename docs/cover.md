@@ -1,6 +1,6 @@
 <!-- docs/cover.md -->
 
-![logo](https://image.bobankh.com/2020/07/01/0700209a4d111.svg)
+![logo](https://cdn.jsdelivr.net/gh/BobAnkh/LinuxBeginner/assets/0700209a4d111.svg)
 
 # Linux Beginner
 

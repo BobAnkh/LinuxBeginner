@@ -9,7 +9,7 @@
 
 除了基本的功能介绍、安装、使用方法外，也添加了相应的常用示例，便于速查使用
 
-项目网址：[https://blog.bobankh.com/LinuxBeginner/](https://blog.bobankh.com/LinuxBeginner/)
+项目网址：[https://bobankh.com/LinuxBeginner/](https://bobankh.com/LinuxBeginner/)
 
 ## 背景
 
@@ -17,7 +17,7 @@
 
 ## 使用说明
 
-本项目本身是一个文档合集，使用了[docsify](https://docsify.js.org/#/)构筑了Github Page，具体网址为：[LinuxBeginner](https://blog.bobankh.com/LinuxBeginner/)
+本项目本身是一个文档合集，使用了[docsify](https://docsify.js.org/#/)构筑了Github Page，具体网址为：[LinuxBeginner](https://bobankh.com/LinuxBeginner/)
 
 `docs/`目录下存放了对应的markdown文件，计划后续将生成pdf并定期打包发布
 
