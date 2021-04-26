@@ -1,0 +1,26 @@
+name: md2pdf
+on:
+  schedule:
+    - cron:  '40 20 * * *'
+defaults:
+  run:
+    shell: bash
+jobs:
+  md2pdf:
+    name: md2pdf
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: md2pdf
+        run: bash scripts/md-pdf.sh
+      - name: commit
+        run: |
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com>"
+          git config --global user.name "github-actions[bot]"
+          git add .
+          git commit -m "docs(md2pdf): update pdfs"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: 'master'
