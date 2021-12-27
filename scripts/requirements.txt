@@ -1,2 +1,2 @@
 PyGithub==1.55
-yapf==0.31.0
+yapf==0.32.0
